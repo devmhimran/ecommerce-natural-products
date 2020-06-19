@@ -1,0 +1,61 @@
+main{
+	margin-bottom: 100px;
+}
+.about_title h1{
+	
+	
+	letter-spacing: 20px;
+	margin-bottom: 40px; 
+	font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 50px; 
+  color: #d9534f;
+	
+}
+.about_title span{
+
+	height: 1px;
+    width: 600px;
+    display: block;
+    background: #d9534f;
+    margin: 0px auto 120px;
+}
+.about-detail h4{
+	margin-bottom: 40px;
+	text-align: left;
+	font-family: 'Roboto';
+  
+	
+}
+.about-detail p{
+	text-align: left;
+	width: 400px;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+}
+e
+.image-stack {
+  position: relative;
+  max-width:670px;
+  top: 0;
+  left: 0;
+}
+.image-left {
+  position: relative;
+  max-width:55%;
+  top: 0%;
+  left: 0;
+  z-index: 1;
+}
+.image-right {
+  position: absolute;
+  max-width:55%;
+  top: 12%;
+  left: 35%;
+  z-index: 3;
+}
+.footer_part .container .hr hr{
+   border: none;
+  height: 1px;
+  background:  #d9534f;
+}
