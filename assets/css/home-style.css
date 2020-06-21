@@ -1,343 +1,240 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro';
-}
-body{
 
+.hero-image{
+	background-image: url(../img/soap1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 900px 1000px;
+	background-position: top left;
+	height: 600px;
+	margin-bottom: 200px;
 
 }
+.hero-image .bg-img img{
+	/*width: 80%;
+	height: 90%;
+	margin-right: 305px;*/
 
-.container{
-	margin: 70px auto 0px;
-	text-align: center;
 }
-.upper-head{
+.hero-image .image-container {
+
 	
-	height: 30px;
-	width: 100%;
 }
-.upper-head p{
-	font-size: 16px;
-	letter-spacing: 5px;
-	padding-top: 2px;
-	text-align: center;
-	color: #691C2B;
-	font-family: 'Source Sans Pro';
+.image-container h1{
+	padding-top: 150px;
+	display: block;
+	color: #262524;
+/*	margin-top: -400px;*/
+	font-size: 75px;
+	font-family: 'Roboto';
+	font-weight: 900;
+
+}
+.hero-image .image-container h1 span{
+	color: #d9534f;
+}
+.hero-image .image-container p{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	color: #262524;
+}
+/*Media query Start */
+@media screen (max-width: 992px) {
+.hero-image .image-container h1{
+
+	margin-top: 0px;
+	font-size: 45px;
+
+	}
+}
+@media screen and (max-width: 600px) {
+ .hero-image .image-container h1 {
+    margin-top: 0px;
+	font-size: 20px;
+  }
+}
+/*Media query End */
+/*--------------- */
+/*--Detaile Area--*/
+.detail{
+	margin-top: 80px;
+
+}
+.detail .detail-title h1{
+	font-family: 'Roboto';
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin-bottom: 80px;
+	color: #262524;
+}
+.detail .detail-title h1 span{
+	color: #d9534f;
+	font-size: 70px;
+}
+.detail .detail-left{
+	width: 350px;
+	float: right;
+	padding-right: 60px;
+
+}
+.detail .detail-left h2{
+	font-family: 'Roboto';
+	text-align: right;
+	margin-bottom: 20px;
+	color: #262524;
+
+}
+.detail .detail-left p{
+	font-family: 'Roboto';
+	text-align: right;
+	font-size: 14x;
 	font-weight: 400;
 }
-/*.logo{
-	margin: 20px;
+.detail .detail-left a{
+	float: right;
+}
+.detail-right-video video{
+	border: none;
 }
 
-.nav nav{
-	margin: 0px auto 0px;
-	display: block;
-}
-.profile{
-	margin-top: 20px;
-	margin-left: 80px;
-	display: inline-block;
-}
-.profile img{
-	width: 5%;
+.detail-right{
+	width: 350px;
+	padding-top:90px;
+	padding-left:38px;
+	float: left;
+
 	
 }
-.cart{
-	width: 5%;
-}*/
+.detail-right h2{
+	font-family: 'Roboto';
 
-.icon img{
-
-	width: 20px;
-	height: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+	color: #262524;
+}
+.detail-right p{
+	font-family: 'Roboto';
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+}
+.detail-right a{
+	float: left;
+}
+.detail-2{
+	margin-top: 150px;
+}
+.detail-2 .detail-2-title h1{
+	font-family: 'Roboto';
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin-bottom: 50px;
+	color: #262524;
+}
+.detail-2-p{
+	width: 800px;
+	text-align: center;
+	margin: 0px auto 0px;
+}
+.detail-2-p p{
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 400;
+	text-align: justify;	
+}
+.detail-2-quote{
+	margin-left: 153px;
+	width: 800px;
+	height: 281px;
+	background-image: url("../img/leaf1.jpg");
+	background-repeat: no-repeat;
+	background-size: 800px 281px;
+	background-position: cover;
+	
+}
+.detail-2-quote blockquote{
+	width: 400px;
+	margin-left: 300px;
+	
+} 
+.detail-2-quote blockquote p i{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 12px;
+}
+.detail-2-quote .blockquote-footer b{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 18px;
+	color: #262524;
+}
+.detail-2-quote a{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.gallary-tittle h1{
+	font-family: 'Roboto';
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: 10px;
+	margin-top: 200px;
+	margin-bottom: -10px;
+	color: #262524;
+}
+.gallary-tittle h1 span{
+	color: #d9534f;
+	font-weight: 900;
+	font-size: 55px;
 
 }
-.icon p{
-	margin-left: 15px;: 
-}
-.user-cart {
-	margin-left: 15px;
-}
-
-
-/**********************footer part css*******************/
-
-.footer_part {
-  padding: 130px 0px 25px;
-}
-@media (max-width: 576px) {
-  .footer_part {
-    padding: 70px 0px 25px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .footer_part {
-    padding: 70px 0px 25px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer_part {
-    padding: 70px 0px 25px;
-  }
-}
-
-
-.footer_part img {
-  margin-bottom: 35px;
-}
-
-@media (max-width: 576px) {
-  .footer_part .single_footer_part {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 22, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 22, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part {
-    margin-bottom: 20px;
-  }
-}
-
-/* line 37, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part h4 {
-  font-size: 20px;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
-
-@media (max-width: 576px) {
-  /* line 37, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part h4 {
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 37, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part h4 {
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 37, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part h4 {
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 37, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part h4 {
-    font-size: 19px;
-  }
-}
-
-/* line 59, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part p {
-  margin-bottom: 10px;
-}
-.footer_part .single_footer_part #mc_embed_signup input[type=email]: focus{
-	color: red;
-}
-
-/* line 65, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .list-unstyled li a {
-  color: #7f7f7f;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-/* line 69, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .list-unstyled li a:hover {
-  color: #ff3368 !important;
-}
-
-/* line 76, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .social_icon {
-  float: left;
-  margin-top: 38px;
-}
-
-@media (max-width: 991px) {
-  /* line 76, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .single_footer_part .social_icon {
-    margin-top: 15px;
-  }
-}
-
-/* line 87, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .social_icon li a {
-  margin-left: 0;
-  margin-right: 25px;
-  padding: 10px;
-}
-
-/* line 98, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .mail_part {
+.image-1 .container {
   position: relative;
+  width: 90%;
 }
-
-/* line 101, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.single_footer_part .mc_embed_signup input[type=email]{
-
+.image-1 .container .image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-/* line 111, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .single_footer_part .mail_part .email_icon {
+.image-1 .container .overlay {
   position: absolute;
-  right: 0px;
-  top: 30px;
-  background-color: #ff3368;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.image-1 .container:hover .overlay {
+	bottom: 0;
+	height: 100%;
+}
+
+.image-1 .container .overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  line-height: 10px;
-  border: 2px solid #ff3368;
+}
+.gallary .container a{
+	margin-top: 80px;
 }
 
-/* line 125, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part hr {
-  background-color: #cad7dc;
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
 
-/* line 131, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon {
-  text-align: right;
+.footer_part .container .hr hr{
+  border: none;
+  height: 1px;
+  background:  #d9534f;
 }
-
-/* line 134, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon li {
-  display: inline-block;
-}
-
-/* line 137, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon li a {
-  font-size: 14px;
-  color: #7f7f7f;
-  padding: 5px 11px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* line 141, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon li a:hover {
-  background-color: #ff3368;
-  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
-  color: #fff !important;
-}
-
-/* line 147, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon li a i:hover {
-  color: #fff !important;
-}
-
-@media (max-width: 576px) {
-  /* line 137, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .footer_icon li a {
-    margin-left: 0px;
-    margin-right: 25px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 137, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .footer_icon li a {
-    margin-left: 0px;
-    margin-right: 25px;
-  }
-}
-
-/* line 168, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .footer_icon li a :hover {
-  color: #ff3368;
-}
-
-@media (max-width: 576px) {
-  /* line 131, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .footer_icon {
-    float: left;
-    margin-top: 15px;
-  }
-}
-
-/* line 187, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .copyright_text p {
-  color: #888;
-}
-
-/* line 191, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .copyright_text span {
-  color: #ff3368;
-  font-size: 12px;
-}
-
-@media (max-width: 991px) {
-  /* line 186, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .copyright_text {
-    text-align: center !important;
-  }
-}
-
-/* line 203, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .copyright_text p a {
-  color: #ff3368;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* line 207, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .copyright_text p a:hover {
-  color: #ff3368;
-}
-
-/* line 212, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .info {
-  color: red !important;
-}
-
-/* line 215, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part .copyright_part {
-  margin-top: 45px;
-}
-
-@media (max-width: 991px) {
-  /* line 219, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .footer_icon {
-    text-align: center;
-    float: none;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 225, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .justify-content-around {
-    justify-content: flex-start !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 231, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-  .footer_part .justify-content-around {
-    justify-content: flex-start !important;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
