@@ -63,7 +63,7 @@
     margin-bottom: 8px;
 }
 .single-product form input:focus{
-   border: 2px solid #E67A41
+   border: 2px solid #E67A41;
 }
 .pagination{
     position: absolute;

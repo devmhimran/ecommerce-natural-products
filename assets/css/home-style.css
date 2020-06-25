@@ -247,6 +247,8 @@
 
 .image-1 .container .overlay .text {
   color: white;
+  font-family: 'Roboto';
+  font-weight: 300;
   font-size: 12px;
   position: absolute;
   top: 50%;

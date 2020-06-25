@@ -117,7 +117,7 @@ nav ul li a img:nth-child(6){
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 864px) {
 
       .logo {
             padding: 0;
@@ -548,7 +548,7 @@ nav ul li a img:nth-child(6){
 
 /* line 215, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
 .footer_part .copyright_part {
-  margin-top: 45px;
+  margin: 45px auto 10px;
 }
 
 @media (max-width: 991px) {
