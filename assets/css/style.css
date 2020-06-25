@@ -1,34 +1,285 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Source Sans Pro';
+	font-family: 'Roboto';
 }
 body{
-  width: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      font-family: Roboto;
+      font-weight: 400;
+   /*   background: url(background-img.jpg);*/
+      background-position: center;
+      background-size: cover;
 
 }
+/*............Outline Button Start..........*/
+.btn {
+  border: 4px solid #E67A41;
+  background-color: inherit;
+  padding: 8px 35px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+.success {
+  color: #E67A41;
+}
+.success:hover {
+  background-color: #E67A41;
+  color: white;
+}
+/*............Outline Button End..........*/
+
+.button {
+  background-color: #E67A41; /* Green */
+  
+  color: white;
+  padding: 12px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.button1 {
+  color: white;
+}
+.button1:hover{
+
+  text-decoration: none;
+  background-color: #c2571f;
+  color: white;
+}
+
+/*..........Navbar Start.......*/
+nav {
+      padding: 8px;
+}
+
+.logo {
+      float: left;
+      padding: 8px;
+      margin-left: 16px;
+      margin-top: 8px;
+}
+
+.logo a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0px;
+      text-decoration: none;
+}
+
+nav ul {
+      float: right;
+}
+
+nav ul li {
+      display: inline-block;
+      float: left;
+}
+
+nav ul li:not(:first-child) {
+      margin-left: 48px;
+}
+
+nav ul li:last-child {
+      margin-right: 24px;
+}
+
+nav ul li a {
+      display: inline-block;
+      outline: none;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      font-weight: 600;
+}
+nav ul li a:hover{
+  color: #E67A41;
+  text-decoration: none;
+   text-shadow: 2px 2px 8px #f79663;
+}
+nav ul li a img:nth-child(6){
+ 
+}
+
+
+@media screen and (max-width: 864px) {
+
+      .logo {
+            padding: 0;
+            position: absolute;
+            left: 40%;
+      }
+
+      .nav-wrapper {
+            position: fixed;
+            top: 5%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #fff;
+            opacity: 0;
+            transition: all 0.2s ease;
+      }
+
+      .nav-wrapper ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+      }
+
+      .nav-wrapper ul li {
+            display: block;
+            float: none;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+      }
+
+      .nav-wrapper ul li:nth-child(1) a {
+            transition-delay: 0.2s;
+      }
+
+      .nav-wrapper ul li:nth-child(2) a {
+            transition-delay: 0.3s;
+      }
+
+      .nav-wrapper ul li:nth-child(3) a {
+            transition-delay: 0.4s;
+      }
+
+      .nav-wrapper ul li:nth-child(4) a {
+            transition-delay: 0.5s;
+      }
+
+      .nav-wrapper ul li:not(:first-child) {
+            margin-left: 0;
+      }
+
+      .nav-wrapper ul li a {
+            padding: 10px 24px;
+            opacity: 0;
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            transform: translateX(-20px);
+            transition: all 0.2s ease;
+      }
+
+      .nav-btn {
+            position: fixed;
+            right: 10px;
+            top: 105px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            z-index: 99999;
+            border-radius: 50%;
+      }
+
+      .nav-btn i {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #000;
+            border-radius: 2px;
+            margin-left: 14px;
+      }
+
+      .nav-btn i:nth-child(1) {
+            margin-top: 16px;
+      }
+
+      .nav-btn i:nth-child(2) {
+            margin-top: 4px;
+            opacity: 1;
+      }
+
+      .nav-btn i:nth-child(3) {
+            margin-top: 4px;
+      }
+      .icon img{
+        margin-top: -10px;
+      }
+}
+
+#nav:checked + .nav-btn {
+      transform: rotate(45deg);
+}
+
+#nav:checked + .nav-btn i {
+      background: #000;
+      transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-btn i:nth-child(1) {
+      transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-btn i:nth-child(2) {
+      opacity: 0;
+}
+
+#nav:checked + .nav-btn i:nth-child(3) {
+      transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-wrapper {
+      z-index: 9990;
+      opacity: 1;
+}
+
+#nav:checked ~ .nav-wrapper ul li a {
+      opacity: 1;
+      transform: translateX(0);
+}
+
+.hidden {
+      display: none;
+}
+
+/*..........Navbar ENd.......*/
+
 
 .container{
 	margin: 70px auto 0px;
 	text-align: center;
 }
 .upper-head{
-	
-	height: 30px;
-	width: 100%;
+    background-color: #E67A41;
+    height: 30px;
+    width: 100%;
 }
 .upper-head p{
-	font-size: 16px;
-	letter-spacing: 5px;
-	padding-top: 2px;
-	text-align: center;
-	color: #691C2B;
-	font-family: 'Source Sans Pro';
-	font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+}
+
+.icon{
+  margin-top: 18px;
 }
 .icon img{
 
@@ -37,7 +288,10 @@ body{
 
 }
 .icon p{
-	margin-left: 15px;: 
+	margin-left: 15px;
+}
+.icon a{
+    text-decoration: none;
 }
 .user-cart {
 	margin-left: 15px;
@@ -144,7 +398,8 @@ body{
 }
 
 .footer_part .single_footer_part .list-unstyled li a:hover {
-  color: #ff3368 !important;
+  color: #E67A41 !important;
+   text-decoration: none;
 }
 
 .footer_part .single_footer_part .social_icon {
@@ -218,6 +473,7 @@ body{
   background-color: #ff3368;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
   color: #fff !important;
+
 }
 
 /* line 147, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
@@ -281,7 +537,8 @@ body{
 
 /* line 207, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
 .footer_part .copyright_text p a:hover {
-  color: #ff3368;
+  color: #E67A41;
+  text-decoration: none;
 }
 
 /* line 212, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */

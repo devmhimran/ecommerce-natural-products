@@ -1,36 +1,39 @@
+
+
 main{
 	margin-bottom: 100px;
 }
 .about_title h1{
 	
 	
-	letter-spacing: 20px;
+	letter-spacing: 5px;
 	margin-bottom: 40px; 
 	font-family: 'Roboto';
   font-weight: 900;
   font-size: 50px; 
-  color: #d9534f;
+  color: #E67A41;
 	
 }
 .about_title span{
 
 	height: 1px;
-    width: 600px;
-    display: block;
-    background: #d9534f;
-    margin: 0px auto 120px;
+  width: 550px;
+  display: block;
+  background: #E67A41;
+  margin: 0px auto 120px;
 }
 .about-detail h4{
 	margin-bottom: 40px;
 	text-align: left;
 	font-family: 'Roboto';
+  font-weight: 600;
   
 	
 }
 .about-detail p{
-	text-align: left;
+	text-align: justify;
 	width: 400px;
-	font-family: 'Source Sans Pro';
+	font-family: 'Roboto';
 	font-weight: 400;
 }
 e
@@ -59,3 +62,70 @@ e
   height: 1px;
   background:  #d9534f;
 }
+
+/*====================================*/
+/*====================================*/
+/*====================================*/
+/*====================================*/
+
+@media screen and (max-width: 992px) {
+  .about{
+    width: 90%;
+  }
+.about .image-stack{
+    margin-top: -80px; 
+    margin-bottom: 20px;
+  }
+  .about_title h1{
+    font-size: 35px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+  }
+  .about .about-detail{
+    margin-top: 220px;
+  }
+  .about-detail h4{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about_title span{
+    width: 50%;
+  }
+  .about-detail p{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+  /*====================================*/
+  /*====================================*/
+@media screen and (max-width: 600px) {
+  .about_title h1{
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+  }
+  .about_title span{
+    width: 50%;
+  }
+   .about .image-stack{
+    margin-top: -80px; 
+    margin-bottom: 20px;
+  }
+  .about .about-detail{
+    margin-top: 220px;
+  }
+  .about-detail h4{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about-detail p{
+    text-align: justify;
+    margin:0px 28px; 0px;
+  }
+
+}
+  /*====================================*/
+  /*====================================*/
+  /*====================================*/

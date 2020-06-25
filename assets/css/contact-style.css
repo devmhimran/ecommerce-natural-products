@@ -1,7 +1,7 @@
 .contact-title h1{
 	font-family: 'Roboto';
 	font-weight: 900;
-	color: #d9534f;
+	color: #E67A41;
 	letter-spacing: 10px;
 	font-size: 60px;
 }
@@ -9,8 +9,8 @@
 	height: 1px;
     width: 300px;
     display: block;
-    background: #d9534f;
-    margin: 30px auto 60px;
+    background: #E67A41;
+    margin: 26px auto 60px;
 }
 .contact_detail{
 	margin-top: 75px;
