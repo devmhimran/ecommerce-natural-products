@@ -6,18 +6,7 @@
 	box-sizing: border-box;
 	font-family: 'Roboto';
 }
-body{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100vh;
-      font-family: Roboto;
-      font-weight: 400;
-   /*   background: url(background-img.jpg);*/
-      background-position: center;
-      background-size: cover;
 
-}
 /*............Outline Button Start..........*/
 .btn {
   border: 4px solid #E67A41;
@@ -35,13 +24,14 @@ body{
   background-color: #E67A41;
   color: white;
 }
-/*............Outline Button End..........*/
+
+
 
 .button {
   background-color: #E67A41; /* Green */
   
   color: white;
-  padding: 12px 35px;
+  padding: 5px 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -58,6 +48,22 @@ body{
   background-color: #c2571f;
   color: white;
 }
+
+/*............Outline Button End..........*/
+body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      font-family: Roboto;
+      font-weight: 400;
+   /*   background: url(background-img.jpg);*/
+      background-position: center;
+      background-size: cover;
+
+}
+/*............PreLoader Start..........*/
+
 
 /*..........Navbar Start.......*/
 nav {
