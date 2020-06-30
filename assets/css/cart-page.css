@@ -23,7 +23,39 @@
       display: inline;
   }
   .column .cart-product-title p{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: left;
+    margin-top: -4px;
+    margin-left: 100px;
+  }
+  .column .cart-product-price p{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .cart .cart-product-quantity input{
+      border: 1px solid grey;
+      height: 50px;
+      width: 45px;
+      margin-top: 16px;
+      display: inline;
+  }
+  .cart .cart-product-quantity input:focus{
+      border: 1px solid #d9534f;
+      margin-left: 2px;
+  }
+  .cart .cart-product-total-price p{
+      display: inline;
+      float: right;
+      position: absolute;
+      top: 50%;
+      right: 10%;
+  }
+  .cart .cart-cross button{
+    color: blue;
+    size: 18px;
+    margin-bottom: 50px;
   }
   /* Clear floats after the columns */
   .row:after {
