@@ -31,17 +31,15 @@ html {
   color: white;
 }
 .button-buy {
-  background-color: #E67A41; /* Orange */
-  
+  background-color: #d62b00; /* Green */
   color: white;
   padding: 5px 18px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
   margin: 2px 2px;
   cursor: pointer;
-  float: left;
 }
 .button2 {
   color: white;
@@ -49,7 +47,7 @@ html {
 .button2:hover{
 
   text-decoration: none;
-  background-color: #c2571f;
+  background-color: #941e00;
   color: white;
 }
 .product-page .container .row .image-product{
@@ -291,4 +289,28 @@ p {
 	float: left;
 	margin-left: 146px;
 	width: 35%;
+}
+.product-cart .single-product .card{
+
+    width: 50%;
+    height: auto;
+   
+    padding:0px;
+}
+.product-cart .single-product .inner{
+    overflow: hidden;
+}
+.product-cart .single-product .inner .card-img-top{
+    transition:  all 1.2s ease;
+}
+.product-cart .single-product .inner img:hover{
+    transform: scale(1.2);
+}
+.single-product form input{
+    border: 2px solid black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.single-product form input:focus{
+   border: 2px solid #E67A41;
 }

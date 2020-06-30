@@ -449,8 +449,8 @@ nav ul li a img:nth-child(6){
 }
 
 /* line 125, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_footer.scss */
-.footer_part hr {
-  background-color: #cad7dc;
+.footer_part .hr {
+  background-color: #E67A41;
   margin-top: 50px;
   margin-bottom: 25px;
 }
