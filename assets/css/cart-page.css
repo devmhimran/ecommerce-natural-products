@@ -18,7 +18,7 @@
       width: 85px;
       height: 85px;
       margin-top: -4px;
-      border: 1px solid grey;
+      border: 1px solid rgba(0, 0, 0, 0.71);
       float: left;
       display: inline;
   }
@@ -35,7 +35,7 @@
   }
 
   .cart .cart-product-quantity input{
-      border: 1px solid grey;
+      border: 1px solidrgba(0, 0, 0, 0.71);
       height: 50px;
       width: 45px;
       margin-top: 16px;
@@ -48,14 +48,15 @@
   .cart .cart-product-total-price p{
       display: inline;
       float: right;
-      position: absolute;
+      /* position: absolute;
       top: 50%;
-      right: 10%;
+      right: 10%; */
+      margin-top: -35px;
+      margin-left: -5px;
+      padding-right: 70px;
   }
   .cart .cart-cross button{
-    color: blue;
-    size: 18px;
-    margin-bottom: 50px;
+    
   }
   /* Clear floats after the columns */
   .row:after {
