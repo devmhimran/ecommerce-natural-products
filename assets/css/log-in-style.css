@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.log-in h1{
+    margin : 50px auto 30px;
+    display: flex;
+    justify-content: center;
+}
+.log-in hr{
+    width: 100px;
+}
+.line span{
+    height: 1px;
+    width: 100px;
+    color: red;
+}
+.button {
+    background-color: #E67A41; /* Green */
+    
+    color: white;
+    padding: 5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+  .button1 {
+    color: white;
+  }
+  .button1:hover{
+  
+    text-decoration: none;
+    background-color: #c2571f;
+    color: white;
+  }
