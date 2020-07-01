@@ -8,13 +8,12 @@
     display: flex;
     justify-content: center;
 }
-.log-in hr{
-    width: 100px;
-}
-.line span{
-    height: 1px;
-    width: 100px;
-    color: red;
+.line hr{
+  width: 80px;
+  margin: -20px auto 0px;
+  border: 2px solid #E67A41;;
+  display: flex;
+  justify-content: center;
 }
 .button {
     background-color: #E67A41; /* Green */
