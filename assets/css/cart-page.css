@@ -71,3 +71,32 @@
       width: 100%;
     }
   }
+.cart-summury-header p{
+    font-size: 18px;
+    text-align: left;
+
+  }
+.cart-summury-left p{
+    text-align: left;
+    
+  }
+  
+  .promo-code{
+    display: block;
+  }
+  .promo-code a{
+    text-align: left;
+    float: left;
+    display: block;
+  }
+.add-a-note a{
+  float: left;
+  display: block;
+}
+.promo-code {
+  list-style-type: none;
+}
+.promo-code ul li a{
+  list-style: none;
+
+}
