@@ -190,9 +190,8 @@ nav ul li a img:nth-child(6){
       }
 
       .nav-btn {
-            position: fixed;
-            right: 10px;
-            top: 105px;
+            position: relative;
+            float: right;
             display: block;
             width: 48px;
             height: 48px;
@@ -288,9 +287,15 @@ nav ul li a img:nth-child(6){
   margin-top: 18px;
 }
 .icon img{
-
 	width: 20px;
 	height: 20px;
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .icon{
+    margin-top: -37px;
+  }
+  }
 
 }
 .icon p{

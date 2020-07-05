@@ -24,7 +24,7 @@ body{
     letter-spacing: 3px;
 }
 .product-cart .product-head-title h1 span{
-    color: #d9534f;
+    color: #E67A41;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 75px; 
@@ -63,15 +63,41 @@ body{
     transform: scale(1.2);
 }
 .single-product form input{
-    border: 2px solid black;
+    border: 1.5px solid black;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 .single-product form input:focus{
-   border: 2px solid #E67A41;
+   border: 1.5px solid #E67A41;
 }
 .pagination{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
+.card-body a{
+    margin-left: -0.3px;
+}
+/*====================================*/
+/*====================================*/
+/*====================================*/
+/*====================================*/
+
+@media screen and (max-width: 992px) {
+  
+}
+  /*====================================*/
+  /*====================================*/
+@media screen and (max-width: 600px) {
+    .product-cart .product-head-title h1{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 3px;
+    }
+ 
+}
+  /*====================================*/
+  /*====================================*/
+  /*====================================*/
+
