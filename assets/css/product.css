@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto';
 }
 html {
   width: 100%;
@@ -87,6 +90,16 @@ html {
 .product-page .container .form-group .quantity-num{
 	border: 1px solid black;
 	width: 80px;
+}
+.image-product .product-description{
+  text-align: left;
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+}
+.image-product .product-description p{
+  font-size: 14px;
+  font-family: 'Roboto';
 }
 
 .collapsible {
@@ -179,12 +192,13 @@ h2 {
   background-color: white;
   margin: 20px;
   cursor: pointer;
+  font-family: 'Roboto';
 }
 
 p {
   color: rgba(48, 69, 92, 0.8);
-  font-size: 12px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
@@ -193,6 +207,7 @@ p {
   transform: translate(0, 0);
   margin-top: 14px;
   z-index: 2;
+  font-family: 'Roboto';
 }
 
 .collapse1 ul {
@@ -284,33 +299,44 @@ p {
     transform: rotateX(0deg);
   }
 }
-.product-page .product-description{
-	text-align: left;
-	float: left;
-	margin-left: 146px;
-	width: 35%;
+.product h1{
+  margin-bottom: 20px;
 }
-.product-cart .single-product .card{
+.related-product hr{
+  height: 1px;
+  width: 200px;
+  background-color: #E67A41;
+  margin: 30px auto 70px;
+}
+/* .product-cart .single-product .card{
 
     width: 50%;
     height: auto;
    
     padding:0px;
+} */
+ .single-product .inner{
+  overflow: hidden;
 }
-.product-cart .single-product .inner{
-    overflow: hidden;
+.single-product .inner .card-img-top{
+  transition:  all 1.2s ease;
 }
-.product-cart .single-product .inner .card-img-top{
-    transition:  all 1.2s ease;
-}
-.product-cart .single-product .inner img:hover{
-    transform: scale(1.2);
+.single-product .inner img:hover{
+  transform: scale(1.2);
 }
 .single-product form input{
-    border: 2px solid black;
-    margin-top: 8px;
-    margin-bottom: 8px;
+  border: 1.5px solid black;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .single-product form input:focus{
-   border: 2px solid #E67A41;
+ border: 1.5px solid #E67A41;
+}
+.pagination{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.card-body a{
+  margin-left: -0.3px;
 }
