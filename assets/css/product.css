@@ -12,6 +12,9 @@ html {
   perspective: 900;
   overflow-y: scroll;
 }
+.upper-head{
+  margin-top: -15px;
+}
 .button-cart {
   background-color: #E67A41; /* Green */
   color: white;
