@@ -102,6 +102,7 @@ html {
   font-family: 'Roboto';
 }
 
+
 .collapsible {
   background-color: #777;
   color: white;
@@ -340,3 +341,54 @@ p {
 .card-body a{
   margin-left: -0.3px;
 }
+/*====================================*/
+/*====================================*/
+/*====================================*/
+/*====================================*/
+
+@media screen and (max-width: 992px) {
+  .product-page .image-thumb img{
+    margin-left: 0px;
+  }
+  .product-order-detail .product-order-status{
+   margin-left: 115px;
+   margin-top: 180px;
+  }
+  .product-order-detail .product-order-status p{
+    text-align: center;
+   }
+  .product-order-detail .quantity-num{
+   margin-left: 115px;
+  }
+  .product-order-detail a{
+   margin: 10px auto 10px;
+  }
+}
+  /*====================================*/
+  /*====================================*/
+@media screen and (max-width: 600px) {
+    .product-upper .pagiantion .pagination-n-p {
+      margin-top: 150px
+    }
+   .product-page .image-thumb img{
+     margin: 5px auto 10px;
+   }
+   .product-order-detail .product-order-status{
+    margin: 200px auto 10px;
+   }
+   .product-order-detail .quantity-num{
+    margin: 10px auto 10px;
+   }
+
+   .image-product .product-description hr{
+    display: flex;
+    justify-content: center;
+  }
+  .product-order-detail a{
+    margin: 10px auto 5px;
+  }
+  
+}
+  /*====================================*/
+  /*====================================*/
+  /*====================================*/
