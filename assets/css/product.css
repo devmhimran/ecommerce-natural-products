@@ -369,7 +369,7 @@ p {
 }
   /*====================================*/
   /*====================================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 350px) {
     .product-upper .pagiantion .pagination-n-p {
       margin-top: 150px
     }
