@@ -66,26 +66,70 @@ body{
 
 
 /*..........Navbar Start.......*/
-nav {
+
+nav .navbar-brand{
+  font-size: 30px;
+  color: #000;
+}
+nav .navbar-toggler{
+  color: #E67A41;
+}
+nav .navbar-toggler-icon {
+ width: 90%;
+ height: 50%;
+  color: #E67A41;
+
+}
+nav .navbar-toggler-icon i{
+  color: #E67A41;
+}
+nav ul {
+  margin: 0px auto 0px;
+}
+nav ul li a{
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-left: 20px;
+  color: #000;
+
+}
+nav ul li a:hover{
+  color: #E67A41;
+  text-decoration: none;
+   text-shadow: 2px 2px 8px #f79663;
+}
+nav ul #profile{
+  position: relative;
+  left: 10%;
+}
+nav ul #cart{
+  position: relative;
+  left: 10%;
+}
+/* nav {
       padding: 8px;
 }
 
 .logo {
+      
       float: left;
       padding: 8px;
-      margin-left: 16px;
-      margin-top: 8px;
+      margin-left: 0px;
+      margin-top: -20px;
 }
 
 .logo a {
+      padding-right: 25px;
       color: #000;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 25px;
       letter-spacing: 0px;
       text-decoration: none;
 }
-
+.nav-wrapper{
+  margin-right: 50px;
+}
 nav ul {
       float: right;
 }
@@ -96,7 +140,7 @@ nav ul li {
 }
 
 nav ul li:not(:first-child) {
-      margin-left: 48px;
+      margin-left: 30px;
 }
 
 nav ul li:last-child {
@@ -111,15 +155,17 @@ nav ul li a {
       text-decoration: none;
       font-size: 14px;
       letter-spacing: 1.2px;
-      font-weight: 600;
+      font-family: 'Roboto' ;
+      font-weight: 400;
 }
 nav ul li a:hover{
-  color: #E67A41;
+  
   text-decoration: none;
    text-shadow: 2px 2px 8px #f79663;
 }
-nav ul li a img:nth-child(6){
- 
+nav ul li #profile{
+  margin-left: px;
+  
 }
 
 
@@ -183,9 +229,9 @@ nav ul li a img:nth-child(6){
             padding: 10px 24px;
             opacity: 0;
             color: #000;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             transform: translateX(-20px);
             transition: all 0.2s ease;
       }
@@ -260,7 +306,7 @@ nav ul li a img:nth-child(6){
 
 .hidden {
       display: none;
-}
+} */
 
 /*..........Navbar ENd.......*/
 
@@ -283,30 +329,43 @@ nav ul li a img:nth-child(6){
     font-family: 'Source Sans Pro';
     font-weight: 400;
 }
-
+ul li a img a{
+	
+}
 .icon{
-  margin-top: 18px;
+  /* margin-top: 18px; */
 }
-.icon img{
-	width: 20px;
-	height: 20px;
 
+.icon a{
+  text-decoration: none;
 }
-@media only screen and (min-width: 300px) and (max-width: 767px) {
-  .icon{
-    margin-top: -37px;
-  }
-  }
-
+.icon #profile{
+  margin-top: 1px;
+  padding-left: -15px;
 }
 .icon p{
 	margin-left: 15px;
 }
-.icon a{
-    text-decoration: none;
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .icon{
+    margin-top: -37px;
+  }
+}
+
+}
+
+
+
+.icon a:hover{
+
 }
 .user-cart {
+  height: 30px;
+  width: 30px;
 	margin-left: 15px;
+	margin-top: -20px;
+	margin-right: 10px;
 }
 
 
@@ -316,6 +375,21 @@ nav ul li a img:nth-child(6){
 .footer_part {
   padding: 130px 0px 25px;
 
+}
+.nav-item{
+  float: left;
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .nav-item {
+    margin-left: 40px;
+  }
+}
+
+.single_footer_part form input{
+  border: 2px solid #E67A41;
+}
+.single_footer_part form input:focus{
+  border: 2px solid #c2571f;
 }
 @media (max-width: 576px) {
   .footer_part {
@@ -343,6 +417,7 @@ nav ul li a img:nth-child(6){
 @media (max-width: 576px) {
   .footer_part .single_footer_part {
     margin-bottom: 20px;
+    margin-right: 100px;
   }
 }
 
@@ -476,7 +551,7 @@ nav ul li a img:nth-child(6){
 }
 
 .footer_part .footer_icon li a:hover {
-  background-color: #ff3368;
+  background-color: #E67A41;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
   color: #fff !important;
 
@@ -517,6 +592,8 @@ nav ul li a img:nth-child(6){
 
 .footer_part .copyright_text p {
   color: #888;
+  float: left;
+  
 }
 
 .footer_part .copyright_text span {
@@ -533,14 +610,14 @@ nav ul li a img:nth-child(6){
 
 
 .footer_part .copyright_text p a {
-  color: #ff3368;
+  color: #E67A41;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 
 .footer_part .copyright_text p a:hover {
-  color: #E67A41;
+  color: #c2571f;
   text-decoration: none;
 }
 

@@ -3,11 +3,11 @@
 
 
 .hero-image{
-	background-image: url(../img/soap1.jpg);
+	background-image: url(../img/hero-image12.jpg);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 900px 1000px;
-	background-position: top left;
+	background-attachment: scroll;
+	background-size: 1000px 700px;
+	background-position:  center center;
 	height: 600px;
 	margin-bottom: 200px;
 
@@ -20,12 +20,14 @@
 }
 .hero-image .image-container {
 
-	
+	/* background-color: black; */
+
 }
 .image-container h1{
+	
 	padding-top: 150px;
 	display: block;
-	color: #262524;
+	color: white;
 /*	margin-top: -400px;*/
 	font-size: 75px;
 	font-family: 'Roboto';
@@ -39,7 +41,7 @@
 	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 18px;
-	color: #262524;
+	color: white;
 }
 /*Media query Start */
 @media screen (max-width: 992px) {
@@ -71,8 +73,8 @@
 	color: #262524;
 }
 .detail .detail-title h1 span{
-	color: #d9534f;
-	font-size: 70px;
+	color: #E67A41;
+	font-size: 75px;
 }
 .detail .detail-left{
 	width: 350px;
@@ -152,13 +154,18 @@
 	background-image: url("../img/leaf1.jpg");
 	background-repeat: no-repeat;
 	background-size: 800px 281px;
-	background-position: cover;
-	
+	background-position: cover;	
 }
-.detail-2-quote blockquote{
-	width: 400px;
-	
-} 
+
+@media screen and (max-width: 300px) {
+	.detail-2-quote{
+		width: 450px;
+	}
+	.detail-2-quote blockquote p i{
+		width: 450px;
+	}
+
+ }
 .detail-2-quote blockquote p i{
 	font-family: 'Roboto';
 	font-weight: 300;
@@ -171,10 +178,10 @@
 	color: #262524;
 }
 .detail-2-quote a{
-	position: absolute;
+	/* position: absolute;
 	top: 70%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%); */
 }
 .gallary-tittle h1{
 	font-family: 'Roboto';
@@ -210,12 +217,12 @@
   bottom: 100%;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 6%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: 88%;
   height:0;
   opacity: 0;
   transition: .5s ease;
@@ -229,6 +236,9 @@
 
 .image-1 .container .overlay .text {
   color: white;
+  font-family: 'Roboto';
+
+	font-weight: 300;
   font-size: 12px;
   position: absolute;
   top: 50%;

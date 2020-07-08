@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Natural Soap</title>
-  <link rel=" shortcut icon" type="image/x-icon" href="assets/img/shape-10.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natural Soap</title>
+    <link rel=" shortcut icon" type="image/x-icon" href="assets/img/shape-10.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	 <link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/contact-style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact-style.scss">
+    <script src="https://kit.fontawesome.com/bd89e614f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
@@ -25,41 +18,50 @@
 		</section>
 <!-- ---------------- NAV AREA START ---------------- -->
 <!-- ------------------------------------------------ -->
-    <header >
-        <div class="container">
-            <nav>
-                  <div class="row">
-                      <div class="col-md-10">
-                          <input type="checkbox" id="nav" class="hidden">
-                  <label for="nav" class="nav-btn">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                  </label>
-                  <div class="logo">
-                        <a href="index.html">Frais</a>
+<header >
+        
+    <div class="container">  
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">Tevata</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span  class="navbar-toggler-icon  navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                          </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav float-right">   
+                            <li class="nav-item">
+                              <a class="nav-link" href="shop-all.html">Shop All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="for-body.html">For Body</a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="for-home.html">For Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                              <li  id="profile" class="nav-item">
+                                <a class="nav-link" href="log-in.html"><i class="fas fa-user" data-toggle="tooltip" data-placement="bottom" title="Log In"></i>
+                                </a>
+                              </li>
+                              <li  id="cart" class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                              </li>
+                          </ul>
+                        </div>
+                      </nav>
                   </div>
-                  <div class="nav-wrapper">
-                        <ul>
-                              <li><a href="shop-all.html">Shop All</a></li>
-                              <li><a href="for-body.html">For Body</a></li>
-                              <li><a href="for-home.html">For Home</a></li>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                              <li><a id="profile" href="contact.html"><img style=" width: 20px ; height: 20px; margin-left: 50px; margin-right: 8px; margin-bottom: 2px;" class="user-icon" src="assets/icon/user.png" alt="">Porfile</a></li>
-                        </ul>
-                  </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class=" d-flex icon">
-                                <img class="user-cart" src="assets/icon/cart.png">
-                            </div>
-                      </div>
-                  </div>
-            </nav>
-      </div>
-</body>
-    </header>
+                  
+          
+        
+
+
+</header>
 <!-- ---------------- NAV AREA End ------------------ -->
 <!-- ------------------------------------------------ -->
     <main>
@@ -93,7 +95,8 @@
                         <input class="form-control" type="text" name="name" placeholder="Phone">
                     </div>
                     <div class="form-group shadow">
-                        <input class="form-control" type="text" name="name" placeholder="Massage">
+                        <!-- <input class="form-control" type="text" name="name" placeholder="Massage"> -->
+                        <textarea class="form-control" name="" id="" cols="50" rows="5"  placeholder="Massage"></textarea>
                     </div>
                     <div class="form-group shadow">
                         <input class="btn success btn-block" type="submit" name="name" value="submit">
@@ -117,7 +120,8 @@
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>FRAIS</h4>
+                        <div class="nav-item">
+                            <h4>Tevata</h4>
                         <ul class="list-unstyled">
                             <li><a href="">SHOP ALL</a></li>
                             <li><a href="">FOR BODY</a></li>
@@ -125,6 +129,7 @@
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">CONTACT</a></li>
                         </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -167,7 +172,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="copyright_text">
-                            <P>All rights reserved | This template is made with by<a href="https://colorlib.com" target="_blank"> CODE GEM</a>
+                            <P>All rights reserved | This template is made with by<a href="https://colorlib.com" target="_blank"> CODER GEM</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
