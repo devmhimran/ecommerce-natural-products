@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Natural Soap</title>
     <link rel=" shortcut icon" type="image/x-icon" href="assets/img/shape-10.png">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/themify-icons.css">
-	 <link rel="stylesheet" href="css/all.css">
+
+    <script src="assets/js1/jquery-2.0.0.min.js"></script>
+    <script src="assets/js1/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/ui/ui.css">
+    <link rel="stylesheet" href="assets/css/ui/responsive.css">
 	
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/cart-page.css">
+    <script src="https://kit.fontawesome.com/bd89e614f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="upper-head">
@@ -22,174 +26,213 @@
     <!-- ---------------- NAV AREA START ---------------- -->
 <!-- ------------------------------------------------ -->
 <header >
-    <div class="container">
-        <nav>
-              <div class="row">
-                  <div class="col-md-10">
-                      <input type="checkbox" id="nav" class="hidden">
-              <label for="nav" class="nav-btn">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-              </label>
-              <div class="logo">
-                    <a href="index.html">Frais</a>
-              </div>
-              <div class="nav-wrapper">
-                    <ul>
-                          <li><a href="shop-all.html">Shop All</a></li>
-                          <li><a href="for-body.html">For Body</a></li>
-                          <li><a href="for-home.html">For Home</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                          <li><a id="profile" href="contact.html"><img style=" width: 20px ; height: 20px; margin-left: 50px; margin-right: 8px; margin-bottom: 2px;" class="user-icon" src="assets/icon/user.png" alt="">Porfile</a></li>
-                    </ul>
-              </div>
-                  </div>
-                  <div class="col-md-2">
-                      <div class=" d-flex icon">
-                            <img class="user-cart" src="assets/icon/cart.png">
+        
+    <div class="container">  
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">Tevata</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span  class="navbar-toggler-icon  navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                          </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav float-right">   
+                            <li class="nav-item">
+                              <a class="nav-link" href="shop-all.html">Shop All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="for-body.html">For Body</a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="for-home.html">For Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                              <li  id="profile" class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-user" data-toggle="tooltip" data-placement="bottom" title="Log In"></i>
+                                </a>
+                              </li>
+                              <li  id="cart" class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                              </li>
+                          </ul>
                         </div>
+                      </nav>
                   </div>
-              </div>
-        </nav>
-  </div>
-</body>
+                  
+          
+        
+
+
 </header>
 <!-- ---------------- NAV AREA End ------------------ -->
 
-<!-- ---------------- Main Area Start ------------------ -->
-<section class="cart">
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="cart-left">
-                    <div class="cart-left-header">
-                        <p>MY CART</p>
-                        <hr>
-                    </div>
-                    <div class="1st-row">
-                        <div class="row">
-                            <div class="column">
-                                <div class="cart-product-image">
-                                  <img src="assets/img/3.jpg" alt="">
-                                </div>
-                                <div class="cart-product-title">
-                                  <p>Pink Anemone</p>
-                                </div>
-                                <div class="cart-product-price">
-                                    <p>$20.00</p>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="cart-product-quantity">
-                                    <input type="number" value="1">
-                                </div>
-                                <div class="cart-product-total-price">
-                                    <p>$40.00</p>
-                                </div>
-                                <div class="cart-cross">
-                                    <button style="color: grey;
-                                    font-size: 18px;
-                                    display: inline;
-                                    margin-right:5px;margin-top:-50px;" class='close' data-dissmiss='alert'>&times;</button></p>
-                                </div>
-                            </div>
-                            
-                          </div>
-                    </div>
-                    <hr>
-                    <div class="=2nd-row">
-                        <div class="row">
-                            <div class="column">
-                                <div class="cart-product-image">
-                                  <img src="assets/img/3.jpg" alt="">
-                                </div>
-                                <div class="cart-product-title">
-                                  <p>Pink Anemone</p>
-                                </div>
-                                <div class="cart-product-price">
-                                    <p>$20.00</p>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="cart-product-quantity">
-                                    <input type="number" value="1">
-                                </div>
-                                <div class="cart-product-total-price">
-                                    <p>$40.00</p>
-                                </div>
-                                <div class="cart-cross">
-                                    <button style="color: grey;
-                                    font-size: 18px;
-                                    display: inline;
-                                    margin-right:5px;margin-top:-50px;" class='close' data-dissmiss='alert'>&times;</button></p>
-                                </div>
-                            </div>
-                            
-                          </div>
-                    </div>
-                      <hr>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="cart-summury-header">
-                    <p>Order Summary</p>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="cart-summury-left">
-                            <p class="">Sub-Total</p>
-                                <hr>
-                            <p class="">Shipping</p>
-                            
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="cart-summury-right">
-                            <p class="">$20.00</p>
-                               <hr> 
-                            <p class="">FREE</p>
-                        </div>
-                    </div>
-                   
-                </div>
-                <hr>
-                <!-- <div class="subtotal-price">
-                    
-                    <p class="float-right">$20.00</p>
-                </div>
-                <br>
-                <div class="product-shpping">
-                    <p class="float-left">Shipping</p>
-                    <p class="float-right">Free</p>
-                </div> -->
-                <a href="check-out-page.html" class="button button1 btn-block">CHECKOUT</a>
-            </div>
-        </div>
-        <!-- ====End Row==== -->
-        <!-- <div class="promo-code">
-            <ul>
-                <li><a id="promo-btn" class="promo-btn" href="#">Enter Promo Code</a></li>
-                <form action="">
-                    <input id="promo-code" class="form-control w-25" type="int" placeholder="Enter Your promo code">
-                </form>
-                <li><a class="add-note-btn" href="#">Add a note</a></li>
-                <form action="">
-                    <textarea class="form-control w-25" name="" id="add-note" cols="10" rows="3" placeholder="Add a note"></textarea>
-                </form>
-            </ul>
-            <div class="form-group email">
-               
-            </div>
-        </div> -->
+    
+    <div class="row">
+        <main class="col-md-9">
+    <div class="card">
+    
+    <table class="table table-borderless table-shopping-cart">
+    <thead class="text-muted">
+    <tr class="small text-uppercase">
+      <th scope="col">Product</th>
+      <th scope="col" width="120">Quantity</th>
+      <th scope="col" width="120">Price</th>
+      <th scope="col" class="text-right" width="200"> </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <figure class="itemside">
+                <div class="aside"><img src="assets/gallary-Image/1.jpg" class="img-sm"></div>
+                <figcaption class="info">
+                    <a href="#" class="title text-dark">Some name of item goes here nice</a>
+                    <p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+                </figcaption>
+            </figure>
+        </td>
+        <td> 
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>	
+                <option>3</option>	
+                <option>4</option>	
+            </select> 
+        </td>
+        <td> 
+            <div class="price-wrap"> 
+                <var class="price">$1156.00</var> 
+                <small class="text-muted"> $315.20 each </small> 
+            </div> <!-- price-wrap .// -->
+        </td>
+        <td class="text-right"> 
+        <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+        <a href="" class="btn btn-light"> Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <figure class="itemside">
+                <div class="aside"><img src="assets/gallary-Image/1.jpg" class="img-sm"></div>
+                <figcaption class="info">
+                    <a href="#" class="title text-dark">Product name  goes here nice</a>
+                    <p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+                </figcaption>
+            </figure>
+        </td>
+        <td> 
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>	
+                <option>3</option>	
+                <option>4</option>	
+            </select> 
+        </td>
+        <td> 
+            <div class="price-wrap"> 
+                <var class="price">$149.97</var> 
+                <small  class="text-muted"> $75.00 each </small>  
+            </div> <!-- price-wrap .// -->
+        </td>
+        <td class="text-right"> 
+        <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+        <a href="" class="btn btn-light btn-round"> Remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <figure class="itemside">
+                <div class="aside"><img src="assets/gallary-Image/1.jpg" class="img-sm"></div>
+                <figcaption class="info">
+                    <a href="#" class="title text-dark">Another name of some product goes just here</a>
+                    <p class="small text-muted">Size: XL, Color: blue,  Brand: Tissot</p>
+                </figcaption>
+            </figure>
+        </td>
+        <td> 
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>	
+                <option>3</option>	
+            </select> 
+        </td>
+        <td> 
+            <div class="price-wrap"> 
+                <var class="price">$98.00</var> 
+                <small class="text-muted"> $578.00 each</small> 
+            </div> <!-- price-wrap .// -->
+        </td>
+        <td class="text-right"> 
+            <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+            <a href="" class="btn btn-light btn-round"> Remove</a>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    
+    <div class="card-body border-top">
+        <a href="#" class="button button1 float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a>
+        <a href="#" class="button button1 float-left"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
+    </div>	
+    </div> <!-- card.// -->
+    
+    <div class="alert alert-success mt-3">
+        <p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
     </div>
     
-</section>
-<!-- ---------------- Main Area End -------------------- -->
+        </main> <!-- col.// -->
+        <aside class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label>Have coupon?</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="" placeholder="Coupon code">
+                            <span class="input-group-append"> 
+                                <button class="btn btn-primary">Apply</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                </div> <!-- card-body.// -->
+            </div>  <!-- card .// -->
+            <div class="card">
+                <div class="card-body">
+                        <dl class="dlist-align">
+                          <dt>Total price:</dt>
+                          <dd class="text-right">USD 568</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                          <dt>Discount:</dt>
+                          <dd class="text-right">USD 658</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                          <dt>Total:</dt>
+                          <dd class="text-right  h5"><strong>$1,650</strong></dd>
+                        </dl>
+                        <hr>
+                        <p class="text-center mb-3">
+                            <img src="assets/img/payments.png" height="26">
+                        </p>
+                        
+                </div> <!-- card-body.// -->
+            </div>  <!-- card .// -->
+        </aside> <!-- col.// -->
+    </div>
+    
+    </div> <!-- container .//  -->
+    </section>
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+    
 
 
 

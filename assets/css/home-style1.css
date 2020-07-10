@@ -12,6 +12,43 @@ html { height: 100%;}
 /*           Wrappers            */
 /*-------------------------------*/
 
+
+.card-product-grid .img-wrap{
+  overflow: hidden;
+}
+.card-product-grid .img-wrap img{
+  transform: scale(1.2);
+  transition:  all 1.2s ease;
+}
+.card-product-grid .img-wrap img:hover{
+  transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;

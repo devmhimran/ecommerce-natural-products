@@ -6,10 +6,11 @@
 	background-image: url(../img/hero-image12.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-size: 1000px 700px;
+	background-size: auto;
 	background-position:  center center;
 	height: 600px;
-	margin-bottom: 200px;
+	margin-bottom: 210px;
+	margin-top: 10px;
 
 }
 .hero-image .bg-img img{
@@ -32,6 +33,7 @@
 	font-size: 75px;
 	font-family: 'Roboto';
 	font-weight: 900;
+	text-transform: uppercase;
 
 }
 .hero-image .image-container h1 span{
@@ -67,10 +69,13 @@
 }
 .detail .detail-title h1{
 	font-family: 'Roboto';
-		font-size: 50px;
+	font-size: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
 	letter-spacing: 10px;
 	margin-bottom: 80px;
 	color: #262524;
+	
 }
 .detail .detail-title h1 span{
 	color: #E67A41;
@@ -132,6 +137,8 @@
 .detail-2 .detail-2-title h1{
 	font-family: 'Roboto';
 	font-size: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
 	letter-spacing: 10px;
 	margin-bottom: 50px;
 	color: #262524;
@@ -154,22 +161,17 @@
 	background-image: url("../img/leaf1.jpg");
 	background-repeat: no-repeat;
 	background-size: 800px 281px;
-	background-position: cover;	
+	background-attachment: scroll;
+	background-position: center center;	
 }
-
-@media screen and (max-width: 300px) {
-	.detail-2-quote{
-		width: 450px;
-	}
-	.detail-2-quote blockquote p i{
-		width: 450px;
-	}
-
- }
+.detail-2-quote blockquote p{
+	
+}
 .detail-2-quote blockquote p i{
 	font-family: 'Roboto';
 	font-weight: 300;
 	font-size: 12px;
+	margin-top: 80px;
 }
 .detail-2-quote .blockquote-footer b{
 	font-family: 'Roboto';
@@ -183,10 +185,24 @@
 	left: 50%;
 	transform: translate(-50%,-50%); */
 }
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.detail-2{
+		width: 450px;
+	}
+	.detail-2 .detail-2-p {
+		width: 300px;
+	}
+	.detail-2-quote blockquote p i{
+		margin-left: 100px;
+	}
+ }
+
+
 .gallary-tittle h1{
 	font-family: 'Roboto';
 	font-size: 50px;
-	font-weight: 900;
+	font-weight: 600;
+	text-transform: uppercase;
 	letter-spacing: 10px;
 	margin-top: 200px;
 	margin-bottom: -10px;

@@ -12,386 +12,61 @@ html {
   perspective: 900;
   overflow-y: scroll;
 }
-.upper-head{
-  margin-top: -15px;
-}
-.button-cart {
-  background-color: #E67A41; /* Green */
-  color: white;
-  padding: 5px 18px;
-  text-align: center;
+.btn1{
+  border: 1px solid #E67A41;
+  background-color: inherit;
   text-decoration: none;
-  display: block;
+  padding: 4px 20px;
   font-size: 16px;
-  margin: 2px 2px;
   cursor: pointer;
+  display: inline-block;
 
 }
-.button1 {
-  color: white;
-}
-.button1:hover{
 
-  text-decoration: none;
-  background-color: #c2571f;
-  color: white;
+.size{
+  margin-left: 110px;
 }
-.button-buy {
-  background-color: #d62b00; /* Green */
-  color: white;
-  padding: 5px 18px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
+.description{
+  margin-top: 110px;
+  margin-bottom: 150px;
 }
-.button2 {
-  color: white;
-}
-.button2:hover{
-
-  text-decoration: none;
-  background-color: #941e00;
-  color: white;
-}
-.product-page .container .row .image-product{
-	width: 363px;
-	height: 483px;
-	float: right;
-	margin-right: 30px;
-}
-.product-page .container .row .image-product .image-thumb{
-	overflow: hidden;
-}
-
-.product-page .container .row .image-product  #image:hover{
-	transform: scale(1.3);
-	transition:  all 1.2s ease;
-}
-.product-page .container .product-name{
-	font-size: 22px;
-	display: block;
-	text-align: left;
-}
-.product-page .container .product-serial{
-	display: block;
-	text-align: left;
-	font-size: 10px;
-	margin-top: -12px;
-}
-.product-page .container .product-price{
-	text-align: left;
-	font-size: 18px;
-}
-.product-page .container .product-quantity{
-	text-align: left;
-	font-size: 14px;
-	margin-bottom: 5px; 
-}
-.product-page .container .form-group .quantity-num{
-	border: 1px solid black;
-	width: 80px;
-}
-.image-product .product-description{
+.description h3{
   text-align: left;
-	float: left;
-	margin-top: 20px;
-	width: 100%;
 }
-.image-product .product-description p{
-  font-size: 14px;
-  font-family: 'Roboto';
-}
-
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+.description p{
   text-align: left;
-  outline: none;
-  font-size: 15px;
 }
-
-.active, .collapsible:hover {
-  background-color: #555;
+.slider-header h4{
+  font-size: 35px;
+  font-family: 'Roboto';
+  font-weight: 600;
 }
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-
-
-
-.transition, p, ul li i:before, ul li i:after {
-  transition: all 0.25s ease-in-out;
-}
-
-.flipIn, h1, ul li {
-  animation: flipdown 0.5s ease both;
-}
-
-.no-select, h2 {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-@media (max-width: 550px) {
-  body {
-    box-sizing: border-box;
-    transform: translate(0, 0);
-    max-width: 100%;
-    min-height: 100%;
-    margin: 0;
-    left: 0;
-  }
-}
-
-h1, h2 {
-  color: #262626;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 3px;
-  font-weight: 100;
-}
-
-h2 {
-  font-size: 12px;
-  line-height: 05px;
-  font-weight: 300;
-  letter-spacing: 1px;
+.slider-header span{
+  height: 1px;
+  width: 110px;
   display: block;
-  background-color: white;
-  margin: 20px;
-  cursor: pointer;
-  font-family: 'Roboto';
+  background: #E67A41;
+  margin: 20px auto 70px;
 }
-
-p {
-  color: rgba(48, 69, 92, 0.8);
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 1px;
-  position: relative;
-  overflow: hidden;
-  max-height: 800px;
-  opacity: 1;
-  transform: translate(0, 0);
-  margin-top: 14px;
-  z-index: 2;
-  font-family: 'Roboto';
-}
-
-.collapse1 ul {
-  list-style: none;
-  perspective: 900;
-  padding: 0;
-  margin: 0;
-}
-.collapse1 ul li {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 4px;
-  padding-top: 0px;
-  border-top: 1px solid #e0e0e0;
-}
-.collapse1 ul li:nth-of-type(1) {
-  animation-delay: 0.5s;
-}
-.collapse1 ul li:nth-of-type(2) {
-  animation-delay: 0.75s;
-}
-.collapse1 ul li:nth-of-type(3) {
-  animation-delay: 1s;
-}
-.collapse1 ul li:last-of-type {
-  padding-bottom: 0;
-}
-.collapse1 ul li i {
-  position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 5px;
-  right: 0;
-}
-.collapse1 ul li i:before, ul li i:after {
-  content: "";
-  position: absolute;
-  background-color: #E67A41;
-  width: 3px;
-  height: 9px;
-}
-.collapse1 ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
-}
-.collapse1 ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
-}
-.collapse1 ul li input[type=checkbox] {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-}
-.collapse1 ul li input[type=checkbox]:checked ~ p {
-  margin-top: 0;
-  max-height: 0;
-  opacity: 0;
-  transform: translate(0, 50%);
-}
-.collapse1 ul li input[type=checkbox]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-.collapse1 ul li input[type=checkbox]:checked ~ i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
-}
-
-@keyframes flipdown {
-  0% {
-    opacity: 0;
-    transform-origin: top center;
-    transform: rotateX(-90deg);
-  }
-  5% {
-    opacity: 1;
-  }
-  80% {
-    transform: rotateX(8deg);
-  }
-  83% {
-    transform: rotateX(6deg);
-  }
-  92% {
-    transform: rotateX(-3deg);
-  }
-  100% {
-    transform-origin: top center;
-    transform: rotateX(0deg);
-  }
-}
-.product h1{
+.product-detail p{
+  text-align: left;
   margin-bottom: 20px;
 }
-.related-product hr{
-  height: 1px;
-  width: 200px;
-  background-color: #E67A41;
-  margin: 30px auto 70px;
+dl dt{
+  float: left;
+  text-align: left;
 }
-/* .product-cart .single-product .card{
 
-    width: 50%;
-    height: auto;
-   
-    padding:0px;
-} */
- .single-product .inner{
+.card-product-grid .img-wrap{
   overflow: hidden;
 }
-.single-product .inner .card-img-top{
+.card-product-grid .img-wrap img{
+  transform: scale(1.5);
   transition:  all 1.2s ease;
 }
-.single-product .inner img:hover{
-  transform: scale(1.2);
+.card-product-grid .img-wrap img:hover{
+  transform: scale(1.7);
 }
-.single-product form input{
-  border: 1.5px solid black;
-  margin-top: 8px;
-  margin-bottom: 8px;
+.topbar a i:hover{
+  color: rgba(211, 85, 85, 0.92);
 }
-.single-product form input:focus{
- border: 1.5px solid #E67A41;
-}
-.pagination{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-.card-body a{
-  margin-left: -0.3px;
-}
-/*====================================*/
-/*====================================*/
-/*====================================*/
-/*====================================*/
-
-@media screen and (max-width: 992px) {
-  .product-page .image-thumb img{
-    margin-left: 0px;
-  }
-  .product-order-detail .product-order-status{
-   margin-left: 115px;
-   margin-top: 180px;
-  }
-  .product-order-detail .product-order-status p{
-    text-align: center;
-   }
-  .product-order-detail .quantity-num{
-   margin-left: 115px;
-  }
-  .product-order-detail a{
-   margin: 10px auto 10px;
-  }
-}
-  /*====================================*/
-  /*====================================*/
-@media screen and (max-width: 350px) {
-    .product-upper .pagiantion .pagination-n-p {
-      margin-top: 150px
-    }
-   .product-page .image-thumb img{
-     margin: 5px auto 10px;
-   }
-   .product-order-detail .product-order-status{
-    margin: 200px auto 10px;
-   }
-   .product-order-detail .quantity-num{
-    margin: 10px auto 10px;
-   }
-
-   .image-product .product-description hr{
-    display: flex;
-    justify-content: center;
-  }
-  .product-order-detail a{
-    margin: 10px auto 5px;
-  }
-  
-}
-  /*====================================*/
-  /*====================================*/
-  /*====================================*/

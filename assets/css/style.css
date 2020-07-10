@@ -8,28 +8,41 @@
 }
 
 /*............Outline Button Start..........*/
-.btn {
+.btnn {
   border: 4px solid #E67A41;
   background-color: inherit;
-  padding: 8px 35px;
+  text-decoration: none;
+  padding: 8px 30px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
   letter-spacing: 3px;
+  
+}
+.btn1{
+  border: 1px solid #E67A41;
+  background-color: inherit;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+
 }
 .success {
   color: #E67A41;
+  text-decoration: none;
 }
 .success:hover {
   background-color: #E67A41;
   color: white;
+  text-decoration: none;
 }
 
 
 
 .button {
   background-color: #E67A41; /* Green */
-  
   color: white;
   padding: 5px 18px;
   text-align: center;
@@ -49,6 +62,7 @@
   color: white;
 }
 
+
 /*............Outline Button End..........*/
 body{
       margin: 0;
@@ -66,10 +80,15 @@ body{
 
 
 /*..........Navbar Start.......*/
-
+header{
+  margin-top: -60px;
+}
 nav .navbar-brand{
   font-size: 30px;
   color: #000;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
 }
 nav .navbar-toggler{
   color: #E67A41;
@@ -88,6 +107,7 @@ nav ul {
 }
 nav ul li a{
   font-family: 'Roboto';
+  text-transform: uppercase;
   font-weight: 400;
   margin-left: 20px;
   color: #000;
@@ -102,213 +122,14 @@ nav ul #profile{
   position: relative;
   left: 10%;
 }
+nav ul #profile a i{
+  width: 25px;
+  height: 25px;
+}
 nav ul #cart{
   position: relative;
   left: 10%;
 }
-/* nav {
-      padding: 8px;
-}
-
-.logo {
-      
-      float: left;
-      padding: 8px;
-      margin-left: 0px;
-      margin-top: -20px;
-}
-
-.logo a {
-      padding-right: 25px;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 25px;
-      letter-spacing: 0px;
-      text-decoration: none;
-}
-.nav-wrapper{
-  margin-right: 50px;
-}
-nav ul {
-      float: right;
-}
-
-nav ul li {
-      display: inline-block;
-      float: left;
-}
-
-nav ul li:not(:first-child) {
-      margin-left: 30px;
-}
-
-nav ul li:last-child {
-      margin-right: 24px;
-}
-
-nav ul li a {
-      display: inline-block;
-      outline: none;
-      color: #000;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 1.2px;
-      font-family: 'Roboto' ;
-      font-weight: 400;
-}
-nav ul li a:hover{
-  
-  text-decoration: none;
-   text-shadow: 2px 2px 8px #f79663;
-}
-nav ul li #profile{
-  margin-left: px;
-  
-}
-
-
-@media screen and (max-width: 864px) {
-
-      .logo {
-            padding: 0;
-            position: absolute;
-            left: 40%;
-      }
-
-      .nav-wrapper {
-            position: fixed;
-            top: 0%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: #fff;
-            opacity: 0;
-            transition: all 0.2s ease;
-      }
-
-      .nav-wrapper ul {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-      }
-
-      .nav-wrapper ul li {
-            position: relative;
-            display: block;
-            float: none;
-            width: 100%;
-            text-align: right;
-            margin-bottom: 10px;
-      }
-
-      .nav-wrapper ul li:nth-child(1) a {
-            transition-delay: 0.2s;
-      }
-
-      .nav-wrapper ul li:nth-child(2) a {
-            transition-delay: 0.3s;
-      }
-
-      .nav-wrapper ul li:nth-child(3) a {
-            transition-delay: 0.4s;
-      }
-
-      .nav-wrapper ul li:nth-child(4) a {
-            transition-delay: 0.5s;
-      }
-
-      .nav-wrapper ul li:not(:first-child) {
-            margin-left: 0;
-      }
-
-      .nav-wrapper ul li a {
-            padding: 10px 24px;
-            
-            color: #000;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transform: translateX(-20px);
-            transition: all 0.2s ease;
-      }
-
-      .nav-btn {
-            position: relative;
-            float: right;          
-            display: block;
-            width: 48px;
-            height: 48px;
-            cursor: pointer;
-            z-index: 99999;
-            border-radius: 50%;
-      }
-
-      .nav-btn i {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: #000;
-            border-radius: 2px;
-            margin-left: 14px;
-      }
-
-      .nav-btn i:nth-child(1) {
-            margin-top: 16px;
-      }
-
-      .nav-btn i:nth-child(2) {
-            margin-top: 4px;
-            opacity: 1;
-      }
-
-      .nav-btn i:nth-child(3) {
-            margin-top: 4px;
-      }
-      .icon img{
-        margin-top: -10px;
-      }
-}
-
-#nav:checked + .nav-btn {
-      transform: rotate(45deg);
-}
-
-#nav:checked + .nav-btn i {
-      background: #000;
-      transition: transform 0.2s ease;
-}
-
-#nav:checked + .nav-btn i:nth-child(1) {
-      transform: translateY(6px) rotate(180deg);
-}
-
-#nav:checked + .nav-btn i:nth-child(2) {
-      opacity: 0;
-}
-
-#nav:checked + .nav-btn i:nth-child(3) {
-      transform: translateY(-6px) rotate(90deg);
-}
-
-#nav:checked ~ .nav-wrapper {
-      z-index: 9990;
-      opacity: 1;
-}
-
-#nav:checked ~ .nav-wrapper ul li a {
-      opacity: 1;
-      transform: translateX(0);
-}
-
-.hidden {
-      display: none;
-} */
-
-/*..........Navbar ENd.......*/
 
 
 .container{
@@ -355,7 +176,49 @@ ul li a img a{
 
 }
 
-
+/* ======== FOOTER START ====== */
+.footer-link ul li a:hover{
+  color: #E67A41;
+}
+.social_icon{
+  /* background-color: #E67A41;
+  color: white;
+  padding: 3px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer; */
+  border: 1px solid #E67A41;
+  background-color: inherit;
+  text-decoration: none;
+  padding: 4px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.social_icon1{
+  color: #E67A41;
+}
+.social_icon1:hover{
+  text-decoration: none;
+  background-color: #E67A41;
+  color: white;
+}
+.copy-right p{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+}
+.copy-right p a{
+  color: red;
+}
+.copy-right p a:hover{
+  color: rgba(216, 75, 75, 1);
+}
+/* ======== FOOTER END ====== */
 
 .icon a:hover{
 
@@ -368,6 +231,9 @@ ul li a img a{
 	margin-right: 10px;
 }
 
+.section-footer{
+  margin-top: 200px;
+}
 
 /**********************footer part css*******************/
 
@@ -377,11 +243,11 @@ ul li a img a{
 
 }
 .nav-item{
-  float: left;
+  /* float: left; */
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .nav-item {
-    margin-left: 40px;
+    /* margin-left: 40px; */
   }
 }
 
