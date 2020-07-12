@@ -63,7 +63,7 @@
 /*--------------- */
 /*--Detaile Area--*/
 .detail{
-	margin-top: 80px;
+	/* margin-top: 80px; */
 
 }
 .detail .detail-title h1{
@@ -72,7 +72,7 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 10px;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 	color: #262524;
 	
 }

@@ -92,16 +92,34 @@ body{
 /*====================================*/
 
 @media screen and (max-width: 992px) {
-  
+  .product-cart .product-head-title h1{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .product-cart .product-head-title p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size:16px;
+    letter-spacing: 1px;
+  }
 }
   /*====================================*/
   /*====================================*/
 @media screen and (max-width: 600px) {
     .product-cart .product-head-title h1{
-    /* font-family: 'Roboto';
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 35px;
-    letter-spacing: 3px; */
+    letter-spacing: 3px;
+  }
+  .product-cart .product-head-title p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size:14px;
+    letter-spacing: 1px;
+  }
 }
  
 }
