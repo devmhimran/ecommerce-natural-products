@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .line hr{
-  width: 80px;
+  width: 60px;
   margin: -20px auto 0px;
   border: 2px solid #E67A41;;
   display: flex;
@@ -35,4 +35,7 @@
     text-decoration: none;
     background-color: #c2571f;
     color: white;
+  }
+  .card{
+    margin: 30px auto 20px;
   }

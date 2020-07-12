@@ -3,105 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-.cart .cart-left .cart-left-header p{
-    text-align: left;
-    font-size: 18px;
+
+.cart-page-content{
+  width: 90%;
+  margin: 120px auto 10px;
 }
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 100px; /* Should be removed. Only for demonstration */
-  }
-  .column .cart-product-image img{
-      width: 85px;
-      height: 85px;
-      margin-top: -4px;
-      border: 1px solid rgba(0, 0, 0, 0.71);
-      float: left;
-      display: inline;
-  }
-  .column .cart-product-title p{
-    font-size: 18px;
-    text-align: left;
-    margin-top: -4px;
-    margin-left: 100px;
-  }
-  .column .cart-product-price p{
-    font-size: 14px;
-    text-align: left;
-    margin-left: 100px;
-  }
-
-  .cart .cart-product-quantity input{
-      border: 1px solidrgba(0, 0, 0, 0.71);
-      height: 50px;
-      width: 45px;
-      margin-top: 16px;
-      display: inline;
-  }
-  .cart .cart-product-quantity input:focus{
-      border: 1px solid #d9534f;
-      margin-left: 2px;
-  }
-  .cart .cart-product-total-price p{
-      display: inline;
-      float: right;
-      /* position: absolute;
-      top: 50%;
-      right: 10%; */
-      margin-top: -35px;
-      margin-left: -5px;
-      padding-right: 70px;
-  }
-  .cart .cart-cross button{
-    
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  @media screen and (max-width: 300px) {
-    .column {
-      width: 100%;
-    }
-    .cart-product-total-price{
-      margin-left: 8px;
-    }
-    .cart .cart-product-quantity input{
-      margin-right: 15px;
-  }
-  }
-.cart-summury-header p{
-    font-size: 18px;
-    text-align: left;
-
-  }
-.cart-summury-left p{
-    text-align: left;
-    
-  }
-  
-  .promo-code{
-    display: block;
-  }
-  .promo-code a{
-    text-align: left;
-    float: left;
-    display: block;
-  }
-.add-a-note a{
-  float: left;
-  display: block;
-}
-.promo-code {
-  list-style-type: none;
-}
-.promo-code ul li a{
-  list-style: none;
-
+.btn1{
+  border: 1px solid #E67A41;
+  background-color: inherit;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
 }

@@ -229,8 +229,9 @@
 }
 .image-1 .container {
   position: relative;
-  width: 90%;
   width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .image-1 .container .image {
   display: block;
@@ -239,7 +240,7 @@
 	position: relative;
 	width: 100%;
 	object-fit: fill;
-
+	transform: scale(1.1);
 }
 
 .image-1 .container .overlay {
@@ -247,21 +248,23 @@
   bottom: 100%;
   top: 0;
   bottom: 0;
-  left: 6%;
+  left: 2%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   height: 100%;
-  width: 88%;
+  width: 97%;
   height:0;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(0, 0, 0, 0.3);
+  
 }
 .image-1 .container:hover .overlay {
 	bottom: 0;
 	height: 100%;
 	 opacity: 1;
+	 transition:  all .7s ease;
 }
 
 .image-1 .container .overlay .text {

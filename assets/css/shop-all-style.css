@@ -98,10 +98,10 @@ body{
   /*====================================*/
 @media screen and (max-width: 600px) {
     .product-cart .product-head-title h1{
-    font-family: 'Roboto';
+    /* font-family: 'Roboto';
     font-weight: 900;
     font-size: 35px;
-    letter-spacing: 3px;
+    letter-spacing: 3px; */
 }
  
 }

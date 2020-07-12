@@ -23,6 +23,19 @@ html {
 
 }
 
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
 .size{
   margin-left: 110px;
 }
@@ -69,4 +82,10 @@ dl dt{
 }
 .topbar a i:hover{
   color: rgba(211, 85, 85, 0.92);
+}
+.related-product h4{
+  margin: 200px auto 90px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 45px;
 }
