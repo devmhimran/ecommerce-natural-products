@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 *{
 	margin: 0;
@@ -92,12 +92,12 @@ header{
 nav{
   margin-top: 30px;
 }
-nav .navbar-brand{
+nav .navbar-brand h1{
   font-size: 30px;
-  color: #000;
+  color: #262524;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
+  font-family: 'Raleway';
+  font-weight: 900;
 }
 nav .navbar-toggler{
   color: #E67A41;
@@ -216,4 +216,23 @@ nav ul #cart{
 	margin-top: -20px;
 	margin-right: 10px;
 }
+  /*====================================*/
+/*====================================*/
+/*====================================*/
+/*====================================*/
 
+@media screen and (max-width: 992px) {
+.button{
+  
+}
+}
+  /*====================================*/
+  /*====================================*/
+@media screen and (max-width: 600px) {
+	.button{
+    width: 80%;
+  }
+}
+  /*====================================*/
+  /*====================================*/
+  /*====================================*/
