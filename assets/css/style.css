@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto';
+	font-family: 'Raleway';
 }
 body{
   margin: 0;
@@ -90,7 +90,7 @@ header{
   margin-top: -60px;
 }
 nav{
-  margin-top: 30px;
+  margin-top: 70px;
 }
 nav .navbar-brand h1{
   font-size: 30px;
@@ -115,35 +115,34 @@ nav ul {
   margin: 0px auto 0px;
 }
 nav ul li a{
-  font-family: 'Roboto';
+  font-family: 'Raleway';
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 20px;
   color: #000;
+  
 
 }
 nav ul li a:hover{
   color: #E67A41;
   text-decoration: none;
-  
    transition:  all 0.4s ease;
   }
 nav ul #profile{
   position: relative;
-  left: 10%;
+  /* left: 10%; */
 }
 nav ul #profile a i{
-  width: 25px;
-  height: 25px;
+  
 }
 nav ul #cart{
   position: relative;
-  left: 10%;
+  /* left: 10%; */
 }
 
 
 .container{
-	margin: 70px auto 0px;
+	margin: 20px auto 0px;
 	text-align: center;
 }
 .upper-head{
@@ -157,25 +156,18 @@ nav ul #cart{
     padding-top: 5px;
     text-align: center;
     color: white;
-    font-family: 'Source Sans Pro';
+    font-family: 'Raleway';
     font-weight: 400;
 }
 
 
 /* ======== FOOTER START ====== */
 .footer-link ul li a:hover{
-  color: #E67A41;
+  /* color: #E67A41; */
+  color:  black;
 }
 .social_icon{
-  /* background-color: #E67A41;
-  color: white;
-  padding: 3px 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer; */
+
   border: 1px solid #E67A41;
   background-color: inherit;
   text-decoration: none;
@@ -198,12 +190,7 @@ nav ul #cart{
   font-size: 14px;
   color: #888;
 }
-.copy-right p a{
-  color: red;
-}
-.copy-right p a:hover{
-  color: rgba(216, 75, 75, 1);
-}
+
 /* ======== FOOTER END ====== */
 
 .icon a:hover{
@@ -225,6 +212,10 @@ nav ul #cart{
 .button{
   
 }
+.social-icon a {
+  margin-top: 3px;
+  margin-left: 2px;
+}
 }
   /*====================================*/
   /*====================================*/
@@ -232,6 +223,9 @@ nav ul #cart{
 	.button{
     width: 80%;
   }
+  .footer-copyright{
+		padding-bottom: 20px;
+	}
 }
   /*====================================*/
   /*====================================*/

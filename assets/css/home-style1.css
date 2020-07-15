@@ -23,7 +23,9 @@ html { height: 100%;}
 .card-product-grid .img-wrap img:hover{
   transform: scale(1.5);
 }
-
+#navbarNavDropdown ul li a:nth-child(6){
+  margin-left: 50px;
+}
 
 
 
@@ -402,3 +404,93 @@ html { height: 100%;}
 	      display: block;
 	      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detail-2-p{
+	width: auto;
+	text-align: center;
+	margin: 0px auto 0px;
+}
+.detail-2-p p{
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	margin: 5px auto 5px;
+	width: 500px;	
+}
+.detail-2-quote{
+	margin-left: 0px;
+	width: auto;
+	height: 281px;
+	background-image: url("../img/leaf1.jpg");
+	background-repeat: no-repeat;
+	background-size: 800px 281px;
+	background-attachment: scroll;
+	background-position: center center;	
+}
+.detail-2-quote blockquote p i{
+	text-align: center;
+	margin: 5px auto 5px;
+}
+.detail-2-quote blockquote p i{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 12px;
+	/* margin-top: 80px; */
+	text-align: center;
+	margin:80px;
+}
+.detail-2-quote .blockquote-footer b{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 18px;
+	color: #262524;
+}
+.detail-2-quote a{
+	/* position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%); */
+}
+@media only screen and (min-width: 572px) and (max-width: 767px) {
+	.detail-2{
+		width: 300px;
+	}
+	.detail-2 .detail-2-p {
+		width: 300px;
+	}
+	.detail-2-quote blockquote p i{
+		margin-left: 100px;
+	}
+ }

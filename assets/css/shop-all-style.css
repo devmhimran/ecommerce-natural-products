@@ -13,25 +13,30 @@ body{
 
 }
 
-
+.product-cart-all{
+  background-color: #f5d5b8;
+}
+.product-cart{
+  padding-bottom: 60px;
+}
 .product-cart .product-head-title{
-    margin-top: 100px;
-    margin-bottom: 80px;
+  margin-top: -10px;
+  margin-bottom: 80px;
 }
 .product-cart .product-head-title h1{
-    font-family: 'Roboto';
+    padding-top: 60px;
+    font-family: 'Raleway';
     font-weight: 900;
     font-size: 65px;
     letter-spacing: 3px;
 }
 .product-cart .product-head-title h1 span{
     color: #E67A41;
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 75px; 
 }
 .product-cart .product-head-title p{
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 400;
     font-size:18px;
     letter-spacing: 1px;
