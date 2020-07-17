@@ -47,13 +47,13 @@
 .hero-image .image-container h1{
 
 	margin-top: 0px;
-	font-size: 45px;
+	font-size: 35px;
 	}
 }
 @media screen and (max-width: 600px) {
  .hero-image .image-container h1 {
     margin-top: 0px;
-	font-size: 35px;
+	font-size: 30px;
   }
   .hero-image .image-container p{
 	font-size: 14px;
@@ -84,7 +84,7 @@
 .detail .detail-left{
 	float: left;
 	padding-right: 60px;
-    padding-top: 5px;
+    padding-top: 65px;
 
 }
 .detail .detail-left h2{
@@ -107,14 +107,14 @@
 	float: left;
 }
 .detail-right-video video{
-	width: 100%;
+	width: 99%;
 	border: none;
-	border-radius: 20px;
+	border-radius: 0px;
 	/* float: left; */
 }
 
 .detail-right{
-	padding-top: 75px;
+	padding-top: 45px;
     padding-left: 25px;
 	
 
@@ -141,19 +141,16 @@
 	margin-top: 18px;
 }
 .detail-left-image{
-	float: left;
+	text-align: right;
     /* transform: scale(0.6); */
-    width: 300px;
-    height: 300px;
+	width: 90%;
+
 
 }
 .detail-left-image img{
-	float: left;
-    width: 100%;
-    object-fit: cover;
-
-
-}
+	/* margin-left: 10px; */
+	width: 110%;
+   }
 .detail-2{
 	margin-top: 150px;
 }
@@ -162,13 +159,14 @@
 	font-size: 50px;
 	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	margin-bottom: 50px;
 	color: #262524;
 }
+
 .quote-bg{
-	width: 102%;
-	background-color: #ededed;
+	/* width: 100%; */
+	background: #ededed;
 	margin-top: 60px;
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -178,7 +176,7 @@
 	font-size: 50px;
 	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	margin-bottom: 50px;
 	color: #262524;
 }.quote .quote-p p{
@@ -194,7 +192,7 @@
 width: 400px;
 font-family: 'Raleway';
 text-align: justify;
-font-size: 12px;
+font-size: 18px;
 font-weight: 500;
 margin: auto;
 margin-bottom: 20px;
@@ -219,6 +217,9 @@ main .gallary-bg{
 	font-weight: 900;
 	font-size: 55px;
 }
+.image-1 {
+	overflow: hidden;
+}
 .image-1 .container {
   position: relative;
   width: 100%;
@@ -240,16 +241,17 @@ main .gallary-bg{
   bottom: 100%;
   top: 0;
   bottom: 0;
-  left: 2%;
+  left: 0%;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  height: 247.5px;
-  width:  248px;
+  height: 100%;
+  width:  100%;
   height:0;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(0, 0, 0, 0.3);
+  overflow:hidden ;
+
   
 }
 .image-1 .container:hover .overlay {
@@ -257,6 +259,7 @@ main .gallary-bg{
 	height: 100%;
 	 opacity: 1;
 	 transition:  all .7s ease;
+	 
 }
 
 .image-1 .container .overlay .text {
@@ -264,7 +267,7 @@ main .gallary-bg{
   font-family: 'Roboto';
 
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -272,6 +275,7 @@ main .gallary-bg{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  
 }
 .gallary .container a{
 	margin-top: 80px;
@@ -302,9 +306,13 @@ main .gallary-bg{
 	.image-container{
 		margin-top: -5px;
 	}
+	.image-container h1{
+		margin-top: -5px;
+	}
 	.detail .detail-title h1{
-		font-size: 35px;
+		font-size: 23px;
 		letter-spacing: 5px;
+		margin-bottom: -40px;
 	}
 	.detail .row{
 		/* margin-left: -20px; */
@@ -317,48 +325,60 @@ main .gallary-bg{
 	
 	font-size: 20px;
    }
+   .detail .detail-left p{
+	   width: 250px;
+   }
    .detail-right-video{
 	   margin-top: 10px;
 	  
    }
    .detail-right-video video{
-	width: 100%;
+
    }
    .detail-right{
 	   margin-left: -70px;
    }
+   .detail .detail-right h2{
+	float: right;
+	width: 250px;
+	font-size: 20px;
+   }
+   .detail .detail-right p{
+	width: 250px;
+}
    .detail-left-image img{
-	margin-right: 70px;
+	/* margin-left: 10px; */
+	width: 110%;
    }
    .quote .quote-header h1{
-	font-family: 'Roboto';
-	font-size: 40px;
+	font-family: 'Raleway';
+	font-size: 30px;
 	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 0px;
 	margin-bottom: 50px;
 	color: #262524;
 }
 .quote .quote-p p{
-	width: 400px;
+	width: 350px;
 	font-family: 'Raleway';
 	text-align: justify;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
 	margin: auto;
 	margin-bottom: 20px;
 	}
 	.quote .main-quote p {
-	width: 400px;
+	width: 350px;
 	font-family: 'Raleway';
-	font-size: 18px;
+	font-size: 14px;
 	font-style: italic;
 	font-weight: 500;
 	margin: auto;
 	margin-bottom: 20px;
 	}
 	.quote .main-quote b{
-		width: 400px;
+	width: 350px;
 	font-family: 'Raleway';
 	font-size: 16px;
 	font-weight: 800;
@@ -367,6 +387,43 @@ main .gallary-bg{
 	float: right;
 	margin-bottom: 20px;
 	}
+	.image-1 .container .overlay {
+		position: absolute;
+		bottom: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0%;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		overflow: hidden;
+		height: 100%;
+		width:  100%;
+		height:0;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(0, 0, 0, 0.3);
+		
+	  }
+	  .image-1 .container:hover .overlay {
+		  bottom: 0;
+		  height: 100%;
+		   opacity: 1;
+		   transition:  all .7s ease;
+	  }
+	  
+	  .image-1 .container .overlay .text {
+		color: white;
+		font-family: 'Roboto';
+	  
+		font-weight: 300;
+		font-size: 16px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	  }
 	.footer-copyright{
 		padding-bottom: 20px;
 	}

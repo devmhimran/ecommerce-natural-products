@@ -1,9 +1,16 @@
+main{
+	background-color: #ededed;
+	padding-bottom: 150px;
+}
 .contact-title h1{
-	font-family: 'Roboto';
+	font-family: 'Raleway';
 	font-weight: 900;
-	color: #E67A41;
-	letter-spacing: 10px;
+	color: #262524;
+	letter-spacing: 5px;
 	font-size: 60px;
+	text-transform: uppercase;
+	padding-top: 150px;
+	padding-bottom: 30px;
 }
 .contact-title span{
 	height: 1px;
@@ -12,36 +19,78 @@
     background: #E67A41;
     margin: 26px auto 60px;
 }
-.contact_detail{
-	margin-top: 75px;
-}
-.contact_form_indicate p{
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 12px;
-	margin-bottom: 20px;
-}
-.contact_name p{
-	font-family: 'Advent Pro';
-	font-weight: 500;
-	font-size: 20px;
-	letter-spacing: 2px;
-}
-.contact_tel p{
-	font-family: 'Advent Pro';
-	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: 2px;
-}
-.contact-email p{
-	font-family: 'Advent Pro';
-	font-weight: 400;
-	font-size: 18px;
-	letter-spacing: 2px;
-}
-.footer_part .container .hr hr{
-  border: none;
-  height: 1px;
-  background:  #E67A41;
+.left-side .card{
+	padding: 10px;
+	width: 400px;
+	margin-top: 0px;
+	border: 1px solid #E67A41;
+
 }
 
+.contact_detail .contact_form_indicate {
+	text-align: left;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.contact_detail  .contact_name {
+	text-align: left;
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 16px;
+
+}
+.contact_detail  .contact_tel {
+	text-align: left;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+
+}
+.contact_detail  .contact-email {
+	text-align: left;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+}
+.contact-form .card{
+	border: 1px solid #E67A41;
+}
+
+  /*====================================*/
+/*====================================*/
+/*====================================*/
+/*====================================*/
+
+@media screen and (max-width: 992px) {
+	.contact-title h1{
+		font-family: 'Raleway';
+		font-weight: 900;
+		color: #262524;
+		letter-spacing: 5px;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+}
+
+	  /*====================================*/
+	  /*====================================*/
+	@media screen and (max-width: 600px) {
+		.contact-title h1{
+			font-family: 'Raleway';
+			font-weight: 900;
+			color: #262524;
+			letter-spacing: 5px;
+			font-size: 30px;
+			text-transform: uppercase;
+			padding-top: 70px;
+			padding-bottom: 30px;
+		}
+	}
+	  /*====================================*/
+	  /*====================================*/
+	  /*====================================*/
+	

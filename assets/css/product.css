@@ -22,7 +22,9 @@ html {
   display: inline-block;
 
 }
-
+.content-body .title{
+  text-align: left;
+}
 .img-magnifier-container {
   position:relative;
 }

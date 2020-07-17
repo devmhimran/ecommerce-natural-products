@@ -1,12 +1,15 @@
-main{
-	margin-bottom: 100px;
+
+.about{
+  background-color: #ededed;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .about_title{
   margin-bottom: 70px;
 }
 .about_title h1{
 	
-	
+
 	letter-spacing: 5px;
 	margin-bottom: 100px; 
 	font-family: 'Raleway';
@@ -39,11 +42,11 @@ main{
 	width: 420px;
   font-family: 'Raleway';
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #262524;
 }
 e
-.image-stack {
+/* .image-stack {
   position: relative;
   max-width:670px;
   top: 0;
@@ -62,12 +65,12 @@ e
   top: 12%;
   left: 35%;
   z-index: 3;
-}
-.footer_part .container .hr hr{
+} */
+/* .footer_part .container .hr hr{
    border: none;
   height: 1px;
   background: #E67A41;
-}
+} */
 
 /*====================================*/
 /*====================================*/
@@ -75,6 +78,12 @@ e
 /*====================================*/
 
 @media screen and (max-width: 992px) {
+  /* .about .about-detail{
+    margin-top: 150px;
+  } */
+  .about-detail{
+    margin-left:70px;
+  }
   .about_title h1{
     font-size: 25px;
     letter-spacing: 1.2px;
@@ -97,7 +106,7 @@ e
   }
   .about-detail p{
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     margin-top: 20px;
   }
@@ -107,6 +116,9 @@ e
   /*====================================*/
   /*====================================*/
 @media screen and (max-width: 600px) {
+  /* .about .about-detail{
+    margin-top: 150px;
+  } */
   .about_title h1{
     font-size: 25px;
     letter-spacing: 1.2px;
@@ -119,9 +131,7 @@ e
     margin-top: 0px; 
     margin-bottom: 20px;
   }
-  .about .about-detail{
-    margin-top: 100px;
-  }
+
   .about-detail h4{
     font-size: 20px;
     text-align: left;

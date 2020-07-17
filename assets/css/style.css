@@ -142,7 +142,7 @@ nav ul #cart{
 
 
 .container{
-	margin: 20px auto 0px;
+	margin: 0px auto 0px;
 	text-align: center;
 }
 .upper-head{
@@ -224,8 +224,15 @@ nav ul #cart{
     width: 80%;
   }
   .footer-copyright{
-		padding-bottom: 20px;
-	}
+		padding-bottom: 75px;
+  }
+  .footer-copyright #reserve{
+    padding-left: 115px;
+    padding-bottom: -10px;
+  }
+  .footer-top article p{
+    display:none;
+  }
 }
   /*====================================*/
   /*====================================*/
