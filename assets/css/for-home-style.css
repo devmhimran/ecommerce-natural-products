@@ -13,25 +13,29 @@ body{
 
 }
 
-
+main{
+  background-color: #ededed;
+  padding-top: 150px;
+}
+.product-cart{
+  padding-bottom: 200px;
+}
 .product-cart .product-head-title{
-    margin-top: 100px;
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .product-cart .product-head-title h1{
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 900;
     font-size: 65px;
     letter-spacing: 3px;
 }
 .product-cart .product-head-title h1 span{
     color: #E67A41;
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 75px; 
 }
 .product-cart .product-head-title p{
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 400;
     font-size:18px;
     letter-spacing: 1px;
@@ -68,20 +72,14 @@ body{
   .topbar a i:hover{
     color: rgba(211, 85, 85, 0.92);
   }
-  
-  
   .info-wrap input{
-    width: 60px;
-    margin: 5px auto 5px;
-    
-}
+    border: 1px solid #E67A41;
+  }
  .info-wrap input:focus{
    border: 1.5px solid #E67A41;
 }
 .pagination{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+  
 }
 .card-body a{
     margin-left: -0.3px;
@@ -109,20 +107,26 @@ body{
   /*====================================*/
 @media screen and (max-width: 600px) {
     .product-cart .product-head-title h1{
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 3px;
   }
   .product-cart .product-head-title p{
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-weight: 400;
     font-size:14px;
     letter-spacing: 1px;
   }
-}
+  .product-cart .product-head-title h1 span{
+    color: #E67A41;
+    font-weight: 900;
+    font-size: 40px; 
+  }
  
 }
+
+
   /*====================================*/
   /*====================================*/
   /*====================================*/

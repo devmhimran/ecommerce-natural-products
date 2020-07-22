@@ -12,6 +12,21 @@ html {
   perspective: 900;
   overflow-y: scroll;
 }
+main{
+  background-color: #ededed;
+}
+.button2 {
+  background-color: #E67A41; /* Green */
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
 .btn1{
   border: 1px solid #E67A41;
   background-color: inherit;
@@ -20,6 +35,19 @@ html {
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+
+}
+.product_main{
+  margin-top: 0px;
+  margin-bottom: 100px;
+  padding-top: 150px;
+}
+.product_main .page_title h1{
+  font-size: 65px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 80px;
 
 }
 .content-body .title{
@@ -71,7 +99,9 @@ dl dt{
   float: left;
   text-align: left;
 }
-
+.row{
+  width: 95%;
+}
 .card-product-grid .img-wrap{
   overflow: hidden;
 }
@@ -85,9 +115,22 @@ dl dt{
 .topbar a i:hover{
   color: rgba(211, 85, 85, 0.92);
 }
-.related-product h4{
-  margin: 200px auto 90px;
+.related-product{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #ededed;;
+}
+.related-product-title h4{
+  margin-bottom: 50px;
   font-family: 'Roboto';
   font-weight: 600;
   font-size: 45px;
+}
+@media screen and (max-width: 600px){
+  .button2 {
+    width: 50%;
+  }
+.sizing{
+  margin: 0px auto 0px;
+  }
 }

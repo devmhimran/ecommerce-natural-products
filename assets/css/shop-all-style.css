@@ -79,10 +79,7 @@ main{
    border: 1.5px solid #E67A41;
 }
 .pagination{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 70px;
+  
 }
 .card-body a{
     margin-left: -0.3px;

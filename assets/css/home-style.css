@@ -425,7 +425,7 @@ main .gallary-bg{
 		transform: translate(-50%, -50%);
 	  }
 	.footer-copyright{
-		padding-bottom: 20px;
+		/* padding-bottom: 20px; */
 	}
 }
   /*====================================*/
