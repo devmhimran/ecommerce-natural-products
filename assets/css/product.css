@@ -132,13 +132,17 @@ dl dt{
 }
 @media screen and (max-width: 600px){
   .button2 {
-    width: 50%;
+    width: 60%;
   }
 .sizing{
   margin: 0px auto 0px;
   }
   .product_main .page_title h1{
-    font-size: 45px;
+    font-size: 40px;
+  }
+  .related-product-title h4{
+
+    font-size: 35px;
   }
   
 }
