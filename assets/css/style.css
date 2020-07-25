@@ -18,7 +18,12 @@ body{
   background-size: cover;
 
 }
+.hr{
+  margin-top: 1rem;
 
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
 /*............Outline Button Start..........*/
 .btnn {
   border: 1px solid #E67A41;

@@ -1,13 +1,14 @@
 
 .hero-image{
-	background-image: url(../img/hero-image12.jpg);
+	
+	background-image: url(../img/hero-image3.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-size: auto;
+	background-size: 1350px 735px;
 	background-position:  center center;
 	height: 600px;
 	margin-bottom: 60px;
-	margin-top: 10px;
+	margin-top: 8px;
 
 }
 .hero-image .bg-img img{
@@ -25,7 +26,7 @@
 
 	padding-top: 150px;
 	display: block;
-	color: white;
+	color: #262524;
 /*	margin-top: -400px;*/
 	font-size: 70px;
 	font-family: 'Raleway';
@@ -67,12 +68,16 @@
 	margin: 0px auto 0px;
 
 }
+.detail .row{
+	width: 65%;
+	margin: 0px auto 0px;
+}
 .detail .detail-title h1{
 	font-family: 'Raleway';
 	font-size: 50px;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 6px;
 	margin-bottom: 40px;
 	color: #262524;
 	
@@ -81,9 +86,10 @@
 	color: #E67A41;
 	font-size: 75px;
 }
+
 .detail .detail-left{
 	float: left;
-	padding-right: 60px;
+	padding-right: 20px;
     padding-top: 65px;
 
 }
@@ -106,11 +112,12 @@
 	margin-top: 18px;
 	float: left;
 }
-.detail-right-video video{
-	width: 99%;
-	border: none;
+.detail-right-gif img{
+	width: 100%;
+
 	border-radius: 0px;
 	/* float: left; */
+	margin-left: 50px;
 }
 
 .detail-right{
@@ -233,7 +240,7 @@ main .gallary-bg{
 	position: relative;
 	width: 100%;
 	object-fit: fill;
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 .image-1 .container .overlay {
@@ -259,6 +266,7 @@ main .gallary-bg{
 	height: 100%;
 	 opacity: 1;
 	 transition:  all .7s ease;
+	 
 	 
 }
 
@@ -295,19 +303,40 @@ main .gallary-bg{
 	.detail .detail-left{
 		margin-bottom: 10px;
 	}
+	.detail-right-gif img{
+		width: 100%;
+	
+		border-radius: 0px;
+		/* float: left; */
+		margin-left: -50px;
+	}
 }
   /*====================================*/
   /*====================================*/
 @media screen and (max-width: 600px) {
-
 	.hero-image{
-		height: 480px;
+		background-image: url(../img/hero-image3.jpg);
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: 450px 350px;
+		background-position:  center center;
+		height: 600px;
+		margin-bottom: 60px;
+		margin-top: 10px;
+	
+	}
+	.hero-image{
+		height: 410px;
 	}
 	.image-container{
 		margin-top: -5px;
 	}
 	.image-container h1{
 		margin-top: -5px;
+	}
+	.detail .row{
+		width: 100%;
+		margin: 0px auto 0px;
 	}
 	.detail .detail-title h1{
 		font-size: 23px;
@@ -316,6 +345,13 @@ main .gallary-bg{
 	}
 	.detail .row{
 		/* margin-left: -20px; */
+	}
+	.detail-right-gif img{
+		width: 100%;
+	
+		border-radius: 0px;
+		/* float: left; */
+		margin-left: -50px;
 	}
    .detail .detail-left{
 	   margin-bottom: 10px;
@@ -332,9 +368,6 @@ main .gallary-bg{
 	   margin-top: 10px;
 	  
    }
-   .detail-right-video video{
-
-   }
    .detail-right{
 	   margin-left: -70px;
    }
@@ -348,7 +381,7 @@ main .gallary-bg{
 }
    .detail-left-image img{
 	/* margin-left: 10px; */
-	width: 110%;
+	width: 100%;
    }
    .quote .quote-header h1{
 	font-family: 'Raleway';

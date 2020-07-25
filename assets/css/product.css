@@ -100,7 +100,8 @@ dl dt{
   text-align: left;
 }
 .row{
-  width: 95%;
+  width: 80%;
+  margin: 0px auto 0px;
 }
 .card-product-grid .img-wrap{
   overflow: hidden;
@@ -126,6 +127,9 @@ dl dt{
   font-weight: 600;
   font-size: 45px;
 }
+@media screen and (max-width: 900px){
+  
+}
 @media screen and (max-width: 600px){
   .button2 {
     width: 50%;
@@ -133,4 +137,8 @@ dl dt{
 .sizing{
   margin: 0px auto 0px;
   }
+  .product_main .page_title h1{
+    font-size: 45px;
+  }
+  
 }
