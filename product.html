@@ -1,167 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Bootstrap-ecommerce by Vosidiy">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natural Soap</title>
+    <link rel=" shortcut icon" type="image/x-icon" href="assets/img/shape-10.png">
 
-<title>Natural Soap</title>
-
-<link rel=" shortcut icon" type="image/x-icon" href="assets/img/shape-10.png">
-
-<!-- jQuery -->
-<script src="assets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
-
-<!-- Bootstrap4 files-->
-<script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-<!-- Font awesome 5 -->
-<link href="assets/css/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
-
-<!-- plugin: slickslider -->
-<link href="assets/plugins/slickslider/slick.css" rel="stylesheet" type="text/css" />
-<link href="assets/plugins/slickslider/slick-theme.css" rel="stylesheet" type="text/css" />
-<script src="assets/plugins/slickslider/slick.min.js"></script>
-
-<!-- plugin: owl carousel  -->
-<link href="assets/plugins/owlcarousel/assets/owl.carousel.css" rel="stylesheet">
-<link href="assets/plugins/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
-<script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-
-<!-- ui style -->
-<link href="assets/css/ui/ui.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/ui/responsive.css" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/product.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- ui javascript -->
-<script src="js/script.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-/// some script
-
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
-
-
-
-
-    /////////////////  items slider. /plugins/slickslider/
-    if ($('.slider-banner-slick').length > 0) { // check if element exists
-        $('.slider-banner-slick').slick({
-              infinite: true,
-              autoplay: true,
-              slidesToShow: 1,
-              dots: false,
-              prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
-           	  nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
-        });
-    } // end if
-
-     /////////////////  items slider. /plugins/slickslider/
-    if ($('.slider-custom-slick').length > 0) { // check if element exists
-        $('.slider-custom-slick').slick({
-              infinite: true,
-              slidesToShow: 2,
-              dots: true,
-              prevArrow: $('.slick-prev-custom'),
-              nextArrow: $('.slick-next-custom')
-        });
-    } // end if
-
-  
-
-    /////////////////  items slider. /plugins/slickslider/
-    if ($('.slider-items-slick').length > 0) { // check if element exists
-        $('.slider-items-slick').slick({
-            infinite: true,
-            swipeToSlide: true,
-            slidesToShow: 4,
-            dots: true,
-            slidesToScroll: 2,
-            prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
-           	nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 640,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    } // end if
-
+    <script src="assets/js/jquery-2.0.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css"> 
+    <link rel="stylesheet" href="assets/css/ui/ui.css">
+    <link rel="stylesheet" href="assets/css/ui/responsive.css">
     
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/product.css">
+    <script src='assets/js/jquery.zoom.min.js'></script>
+  <script>
+    $(document).ready(function(){
+      $('#ex1').zoom();
+      $('#ex2').zoom({ on:'grab' });
 
-    /////////////////  items slider. /plugins/owlcarousel/
-    if ($('.slider-banner-owl').length > 0) { // check if element exists
-        $('.slider-banner-owl').owlCarousel({
-            loop:true,
-            margin:0,
-            items: 1,
-            dots: false,
-            nav:true,
-            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-        });
-    } // end if 
-
-    /////////////////  items slider. /plugins/owlslider/
-    if ($('.slider-items-owl').length > 0) { // check if element exists
-        $('.slider-items-owl').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-            responsive:{
-                0:{
-                    items:1
-                },
-                640:{
-                    items:3
-                },
-                1024:{
-                    items:4
-                }
-            }
-        })
-    } // end if
-
-    /////////////////  items slider. /plugins/owlcarousel/
-    if ($('.slider-custom-owl').length > 0) { // check if element exists
-        var slider_custom_owl = $('.slider-custom-owl');
-        slider_custom_owl.owlCarousel({
-            loop: true,
-            margin:15,
-            items: 2,
-            nav: false,
-        });
-
-        // for custom navigation
-        $('.owl-prev-custom').click(function(){
-            slider_custom_owl.trigger('prev.owl.carousel');
-        });
-
-        $('.owl-next-custom').click(function(){
-           slider_custom_owl.trigger('next.owl.carousel');
-        });
-
-    } // end if 
-    
-
-
-}); 
-// jquery end
-</script>
-
+    });
+  </script>
 </head>
 <body>
 
@@ -223,17 +86,17 @@ $(document).ready(function() {
   
     <section class="product_main ">
       <div class="container page_title">
-        <h1>Product</h1>
+        <h1>Coconut Soap<span>.</span></h1>
       </div>
       <div class="container bg-white shadow">
           <div class="">
               <div class="row">
                   <aside class="col-md-6 col-sm-12">
-                    <article class="gallery-wrap">
+                    <article class="gallery-wrap mt-5">
                     <div class="img-big-wrap">
-                      <div class="img-magnifier-container">
-                        <a href="#"><img id="myimage" src="assets/img/3.jpg"></a>
-                      </div>
+                        <span class='zoom' id='ex1'>
+                          <img src="assets/img/3.jpg" alt='Daisy on the Ohoopee'/>
+                        </span>
                     </div> <!-- slider-product.// -->
                     <div class="thumbs-wrap">
                       <a href="#" class="item-thumb"> <img src="assets/img/3.jpg"></a>
@@ -244,8 +107,6 @@ $(document).ready(function() {
                   </aside>
                   <main class="col-md-6 col-sm-12 border-left bg-white">
                   <article class="content-body">
-          
-                  <h2 class="title text-left">Off-White Odsy-1000 Low-Top Sneakers</h2>
           
           <div class="rating-wrap my-3  text-left">
               <ul class="rating-stars">
@@ -275,14 +136,14 @@ $(document).ready(function() {
           
           
           <dl class="row">
-            <dt class="col-sm-3">Model#</dt>
-            <dd class="col-sm-9">Odsy-1000</dd>
+            <dt class="col-sm-3 text-left">Model#</dt>
+            <dd class="col-sm-9 text-left">Odsy-1000</dd>
           
-            <dt class="col-sm-3">Color</dt>
-            <dd class="col-sm-9">Brown</dd>
+            <dt class="col-sm-3 text-left">Color</dt>
+            <dd class="col-sm-9 text-left">Brown</dd>
           
-            <dt class="col-sm-3">Delivery</dt>
-            <dd class="col-sm-9">Russia, USA, and Europe </dd>
+            <dt class="col-sm-3 text-left">Delivery</dt>
+            <dd class="col-sm-9 text-left">Russia, USA, and Europe </dd>
           </dl>
           
           <hr>
@@ -304,25 +165,27 @@ $(document).ready(function() {
                           <div class="mt-1">
                               <label class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" name="select_size" checked="" class="custom-control-input">
-                                <div class="custom-control-label">Small</div>
+                                <div class="custom-control-label">S</div>
                               </label>
           
                               <label class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" name="select_size" class="custom-control-input">
-                                <div class="custom-control-label">Medium</div>
+                                <div class="custom-control-label">M</div>
                               </label>
           
                               <label class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" name="select_size" class="custom-control-input">
-                                <div class="custom-control-label">Large</div>
+                                <div class="custom-control-label">L</div>
                               </label>
           
                           </div>
                   </div> <!-- col.// -->
               </div> <!-- row.// -->
           
-              <a href="#" class="button2 button1"> Buy now </a>
-              <a href="#" class="btn1 success"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i>  </a>
+              <div class="product-cart-btn">
+                <a href="#" class="button2 button1"> Buy now </a>
+              <a href="cart-page.html" class="btn1 success"> <span class="text">Add to cart</span> <i class="fas fa-shopping-cart"></i></a>
+              </div>
           </article> <!-- product-info-aside .// -->
                   </main> <!-- col.// -->
               </div> <!-- row.// -->
@@ -353,8 +216,8 @@ $(document).ready(function() {
               </div>
               <figcaption class="info-wrap border-top">
                   <a href="#" class="title text-dark h6">Coconut</a>
-                  <div class="price mt-1 mb-1">$53.00</div> <!-- price-wrap.// -->
-                  <div class="mx-auto mb-1"> 
+                  <div class="price mt-1 mb-2">$53.00</div> <!-- price-wrap.// -->
+                           <div class="mx-auto mb-3"> 
                       <div class="input-group input-spinner">
                         <div class="input-group-prepend">
                           <button class="btn btn-light" type="button" id="button-plus"> + </button>
@@ -380,8 +243,8 @@ $(document).ready(function() {
             </div>
             <figcaption class="info-wrap border-top">
                 <a href="#" class="title text-dark h6">Coconut</a>
-                <div class="price mt-1 mb-1">$53.00</div> <!-- price-wrap.// -->
-                <div class="mx-auto mb-1"> 
+                <div class="price mt-1 mb-2">$53.00</div> <!-- price-wrap.// -->
+                           <div class="mx-auto mb-3"> 
                     <div class="input-group input-spinner">
                       <div class="input-group-prepend">
                         <button class="btn btn-light" type="button" id="button-plus"> + </button>
@@ -407,8 +270,8 @@ $(document).ready(function() {
           </div>
           <figcaption class="info-wrap border-top">
               <a href="#" class="title text-dark h6">Coconut</a>
-              <div class="price mt-1 mb-1">$53.00</div> <!-- price-wrap.// -->
-              <div class="mx-auto mb-1"> 
+              <div class="price mt-1 mb-2">$53.00</div> <!-- price-wrap.// -->
+                           <div class="mx-auto mb-3">  
                   <div class="input-group input-spinner">
                     <div class="input-group-prepend">
                       <button class="btn btn-light" type="button" id="button-plus"> + </button>
@@ -496,5 +359,38 @@ $(document).ready(function() {
 
 <!-- ========================= FOOTER END // ========================= -->
 
+<!-- =========================Mobile FOOTER ========================= -->
+<footer style="background-color: #262524;" class="section-footer border-top mobile-footer">
+	<div class="">
+		<section class=" footer-top padding-y">
+			<div class="row container">
+				<aside class="col-md-4 text-light">
+					<article class="mr-3">
+						<h3 class="mb-4">TAVETA</h3>
+                        <div class="mb-3  social-icon">
+                            <a class="btn1 success" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn1 success ml-3" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn1 success ml-3" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+					</article>
+				</aside>
+            </div> <!-- row.// -->
+            <hr>
+            <section class="container footer-copyright">
+                <p id="reserve" class="float-left text-muted">All Right Reserved</p>
+                <p target="_blank" class="float-right text-muted">
+                 Made with by Team Codergem <i class="fas fa-heart"><br></i> by Team Codergem
+                    
+                </p>
+            </section>
+        </section>	<!-- footer-top.// -->
+       
+
+		
+    </div><!-- //container -->
+    
+</footer>
+
+<!-- =========================Mobile FOOTER END // ========================= -->
 </body>
 </html>

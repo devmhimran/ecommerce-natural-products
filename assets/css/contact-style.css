@@ -13,11 +13,9 @@ main{
 	padding-bottom: 30px;
 }
 .contact-title span{
-	height: 1px;
-    width: 300px;
-    display: block;
-    background: #E67A41;
-    margin: 26px auto 60px;
+	color: #E67A41;
+    font-weight: 900;
+    font-size: 75px;
 }
 .left-side .card{
 	padding: 10px;

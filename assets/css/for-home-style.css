@@ -20,7 +20,7 @@ main{
   padding-bottom: 100px;
 }
 .product-cart .product-head-title{
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .product-cart .product-head-title h1{
     font-family: 'Raleway';
@@ -44,7 +44,7 @@ main{
     margin: 0px auto 0px;
     display: flex;
     justify-content: center;
-    width: 80%;
+ width: 95%;
 }
 
 .product-cart .single-product{
@@ -68,7 +68,9 @@ main{
   .card-product-grid .img-wrap img:hover{
     transform: scale(1.2);
   }
-  
+  .topbar a:hover{
+    color: rgba(211, 85, 85, 0.92) !important;
+  }
   .topbar a i:hover{
     color: rgba(211, 85, 85, 0.92);
   }
@@ -178,184 +180,3 @@ main{
 
 
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Raleway';
-  }
-  body{
-    
-  
-  }
-  
-  main{
-    background-color: #ededed;
-    padding-top: 150px;
-  }
-  .product-cart{
-    padding-bottom: 100px;
-  }
-  .product-cart .product-head-title{
-    margin-bottom: 80px;
-  }
-  .product-cart .product-head-title h1{
-      font-family: 'Raleway';
-      font-weight: 900;
-      font-size: 65px;
-      letter-spacing: 3px;
-  }
-  .product-cart .product-head-title h1 span{
-      color: #E67A41;
-      font-weight: 900;
-      font-size: 75px; 
-  }
-  .product-cart .product-head-title p{
-      font-family: 'Raleway';
-      font-weight: 400;
-      font-size:18px;
-      letter-spacing: 1px;
-  
-  }
-  .row{
-      margin: 0px auto 0px;
-      display: flex;
-      justify-content: center;
-      width: 80%;
-  }
-  
-  .product-cart .single-product{
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
-  .product-cart .single-product .card{
-  
-      width: 105%;
-      height: auto;
-     
-      padding:0px;
-  }
-  .card-product-grid .img-wrap{
-      overflow: hidden;
-    }
-    .card-product-grid .img-wrap img{
-      /* transform: scale(1.0); */
-      transition:  all 1.2s ease;
-    }
-    .card-product-grid .img-wrap img:hover{
-      transform: scale(1.2);
-    }
-    
-    .topbar a i:hover{
-      color: rgba(211, 85, 85, 0.92);
-    }
-    .info-wrap input{
-      border: 1px solid #E67A41;
-    }
-   .info-wrap input:focus{
-     border: 1.5px solid #E67A41;
-  }
-  .pagination-section{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-   
-  }
-  .pagination{
-    color: #E67A41;
-    padding: 15px;
-    margin-left: 10px;
-  }
-  .pagination li {
-    margin-left: 15px;
-  
-  }
-  .pg-1{
-    border: 1px solid #414141;
-    background-color: inherit;
-    text-decoration: none;
-    padding: 4px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-  
-  }
-  .pg-btn {
-    color: #414141;
-    text-decoration: none;
-  }
-  .pagination li a{
-    color: #E67A41;
-    padding-top: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 2px;
-  
-  
-  }
-  .card-body a{
-      margin-left: -0.3px;
-  }
-  /*====================================*/
-  /*====================================*/
-  /*====================================*/
-  /*====================================*/
-  
-  @media screen and (max-width: 992px) {
-    .product-cart .product-head-title h1{
-      font-family: 'Roboto';
-      font-weight: 900;
-      font-size: 40px;
-      letter-spacing: 3px;
-    }
-    .product-cart .product-head-title p{
-      font-family: 'Roboto';
-      font-weight: 400;
-      font-size:16px;
-      letter-spacing: 1px;
-    }
-  }
-    /*====================================*/
-    /*====================================*/
-  @media screen and (max-width: 600px) {
-      .product-cart .product-head-title h1{
-      font-family: 'Raleway';
-      font-weight: 900;
-      font-size: 30px;
-      letter-spacing: 3px;
-    }
-    .product-cart .product-head-title p{
-      font-family: 'Raleway';
-      font-weight: 400;
-      font-size:14px;
-      letter-spacing: 1px;
-    }
-    .product-cart .product-head-title h1 span{
-      color: #E67A41;
-      font-weight: 900;
-      font-size: 40px; 
-    }
-    .pagination li {
-      margin-left: 8px;
-    
-    }
-   
-  }
-  
-  
-    /*====================================*/
-    /*====================================*/
-    /*====================================*/
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  

@@ -238,6 +238,16 @@ nav ul #cart{
   .footer-top article p{
     display:none;
   }
+  .section-footer{
+		display: none;
+	}
+	.mobile-footer{
+		display: block;
+		margin: auto;
+	}
+	.social-icon{
+		margin-left: 5px;
+	}
 }
   /*====================================*/
   /*====================================*/

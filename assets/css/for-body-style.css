@@ -20,7 +20,7 @@ main{
   padding-bottom: 100px;
 }
 .product-cart .product-head-title{
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .product-cart .product-head-title h1{
     font-family: 'Raleway';
@@ -44,7 +44,7 @@ main{
     margin: 0px auto 0px;
     display: flex;
     justify-content: center;
-    width: 80%;
+ width: 95%;
 }
 
 .product-cart .single-product{
@@ -68,7 +68,9 @@ main{
   .card-product-grid .img-wrap img:hover{
     transform: scale(1.2);
   }
-  
+  .topbar a:hover{
+    color: rgba(211, 85, 85, 0.92) !important;
+  }
   .topbar a i:hover{
     color: rgba(211, 85, 85, 0.92);
   }
@@ -169,12 +171,4 @@ main{
   /*====================================*/
   /*====================================*/
   /*====================================*/
-
-
-
-
-
-
-
-
 

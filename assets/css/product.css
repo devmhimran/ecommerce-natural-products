@@ -39,33 +39,69 @@ main{
 }
 .product_main{
   margin-top: 0px;
-  margin-bottom: 100px;
-  padding-top: 150px;
+  margin-bottom: 80px;
+  padding-top: 120px;
 }
 .product_main .page_title h1{
-  font-size: 65px;
+  font-size: 40px;
   font-family: 'Raleway';
   font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 
+}
+.product_main .page_title h1 span{
+  color: #E67A41;
+  font-weight: 900;
+  font-size: 70px;
+  font-family: 'Raleway';
 }
 .content-body .title{
   text-align: left;
 }
-.img-magnifier-container {
-  position:relative;
-}
 
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
-}
+
+
+
+
+
+
+
+.zoom {
+      display:inline-block;
+      position: relative;
+    }
+    
+    /* magnifying glass icon */
+    .zoom:after {
+      content:'';
+      display:block; 
+      width:0px; 
+      height:0px; 
+      position:absolute; 
+      top:0;
+      right:0;
+
+    }
+
+    .zoom img {
+      display: block;
+    }
+
+    .zoom img::selection { background-color: transparent; }
+
+    #ex2 img:hover { cursor: url(grab.cur), default; }
+    #ex2 img:active { cursor: url(grabbed.cur), default; }
+
+
+
+
+
+
+
+
+
+
 .size{
   margin-left: 110px;
 }
@@ -99,7 +135,10 @@ dl dt{
   float: left;
   text-align: left;
 }
-.row{
+.product-cart-btn{
+  float: left;
+}
+.related-product .row{
   width: 80%;
   margin: 0px auto 0px;
 }
@@ -113,12 +152,15 @@ dl dt{
 .card-product-grid .img-wrap img:hover{
   transform: scale(1.7);
 }
+.topbar a:hover{
+  color: rgba(211, 85, 85, 0.92) !important;
+}
 .topbar a i:hover{
   color: rgba(211, 85, 85, 0.92);
 }
 .related-product{
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 120px;
   background-color: #ededed;;
 }
 .related-product-title h4{
@@ -143,6 +185,15 @@ dl dt{
   .related-product-title h4{
 
     font-size: 35px;
+  }
+  dl dt{
+    float: left;
+    text-align: center;
+  
+  }
+  .gallery-wrap .img-big-wrap img{
+    width: 100%;
+    height: 100%;
   }
   
 }

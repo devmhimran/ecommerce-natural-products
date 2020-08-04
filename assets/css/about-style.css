@@ -9,8 +9,7 @@
 }
 .about_title h1{
 	
-
-	letter-spacing: 5px;
+  letter-spacing: 3px;
 	margin-bottom: 100px; 
 	font-family: 'Raleway';
   font-weight: 800;
@@ -22,11 +21,9 @@
 }
 .about_title span{
 
-	height: 1px;
-  width: 550px;
-  display: block;
-  background: #E67A41;
-  margin: 0px auto 120px;
+	color: #E67A41;
+    font-weight: 900;
+    font-size: 75px;
 }
 .about-detail{
   margin-left: 20px;
@@ -126,6 +123,7 @@ e
     font-size: 25px;
     letter-spacing: 1.2px;
     margin-bottom: 0px;
+    margin-top: -80px;
   }
   .about_title span{
     width: 50%;

@@ -1116,11 +1116,13 @@ a[class*='card'] {
     text-align: center;
     display: block; }
   .gallery-wrap .img-big-wrap img {
-    height: 450px;
+    height: 400px;
     width: auto;
     display: inline-block;
     cursor: -webkit-zoom-in;
-    cursor: zoom-in; }
+    cursor: zoom-in; 
+  overflow: hidden;
+}
 .gallery-wrap .thumbs-wrap {
   text-align: center;
   margin-bottom: 20px; }
